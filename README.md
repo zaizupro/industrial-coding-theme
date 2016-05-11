@@ -14,7 +14,7 @@ Locate your Sublime Text `Packages directory` by using the menu item `Preference
 
 Then, clone the repository using this command:
 
-    git clone https://github.com/zaizupro/industrial-coding-theme.git "industrial_coding_theme"
+    git clone https://github.com/zaizupro/industrial-coding-theme.git "industrial-coding-theme"
 
 
 ### Manual installation
@@ -36,11 +36,15 @@ Then add the following code settings. **(After activating the theme, you must re
 ```json
 {
     "theme": "industrial_coding.sublime-theme",
-    "color_scheme": "Packages/industrial_coding_theme/industrial_coding.tmTheme"
+    "color_scheme": "Packages/industrial-coding-theme/industrial_coding.tmTheme"
 }
 ```
 
 
 ## Configuration
 
+    "sidebar_font_terminus"
 
+    "sidebar_font_nobold"
+
+    "statusbar_bold_terminus"
