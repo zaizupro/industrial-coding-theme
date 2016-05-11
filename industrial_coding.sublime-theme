@@ -113,7 +113,7 @@
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["hover"]}],
-        "fg": [255, 220, 100]
+        "fg": [225, 220, 100]
     },
 
 
@@ -427,7 +427,7 @@
     // Tooltip content
     {
         "class": "tool_tip_label_control",
-        "color": [255, 150, 0],
+        "color": [255, 150, 0]
     },
 
 //
@@ -451,16 +451,17 @@
     {
         "class": "label_control",
         "parents": [{"class": "status_bar"}],
-        "color": [81, 251, 81] // 02
+        "color": [0, 0, 0],
+        "font.size": 14,
+        "font.bold": true
     },
-    // Status bar label brighter
+    // Status bar label bold terminus
     {
         "class": "label_control",
         "parents": [{"class": "status_bar"}],
-        "settings": ["status_bar_brighter"],
-        "color": [0, 0, 0],
-		"font.face": "Terminus",
-		"font.size": 18,
+        "settings": ["statusbar_bold_terminus"],
+        "font.face": "Terminus",
+        "font.size": 18,
         "font.bold": true
     },
 
@@ -474,44 +475,26 @@
         "layer0.opacity": 1,
         "layer0.tint": [38, 38, 38], // -01
         "layer0.inner_margin": [1,5,2,1],
-        "content_margin": [0,4,0,0]
+        "content_margin": [0,0,0,0]
     },
     // Sidebar tree
     {
         "class": "sidebar_tree",
-        "row_padding": [8,4],
+        "row_padding": [8,2],
         "indent": 16,
-        "indent_offset": 16,
+        "indent_offset": 10,
         "indent_top_level": false,
         "dark_content": true
     },
-    // Sidebar tree padding medium
-    {
-        "class": "sidebar_tree",
-        "settings": ["sidebar_row_padding_medium"],
-        "row_padding": [8,5],
-        "indent": 16,
-        "indent_offset": 16,
-        "indent_top_level": false,
-        "dark_content": true
-    },
-    // Sidebar tree padding large
-    {
-        "class": "sidebar_tree",
-        "settings": ["sidebar_row_padding_large"],
-        "row_padding": [8,6],
-        "indent": 16,
-        "indent_offset": 16,
-        "indent_top_level": false,
-        "dark_content": true
-    },
+
     // Sidebar rows
     {
         "class": "tree_row",
         // "layer0.texture": "",
         "layer0.tint": [255, 150, 0], // 01
         "layer0.opacity": 0,
-        "layer0.inner_margin": [1,1]
+        "layer0.inner_margin": [1,1],
+        // make border here
     },
     // Sidebar row selected
     {
@@ -523,9 +506,9 @@
     // Sidebar heading
     {
         "class": "sidebar_heading",
-        // "color": [204, 119, 50], // 03
         "color": [255, 150, 0], // 03
-        "font.bold": true
+        "font.size": 14,
+        "font.face": "Terminus"
     },
     // Sidebar heading selected
     {
@@ -536,29 +519,22 @@
     // Sidebar entry
     {
         "class": "sidebar_label",
-        // "font.size": 13,
-        "color": [116, 116, 116] // 03
-    },
-    // Sidebar entry font size 12
-    {
-        "class": "sidebar_label",
-        "settings": ["sidebar_size_12"],
-        "font.size": 12,
-        "color": [116, 116, 116] // 03
-    },
-    // Sidebar entry font size 13
-    {
-        "class": "sidebar_label",
-        "settings": ["sidebar_size_13"],
-        "font.size": 13,
-        "color": [116, 116, 116] // 03
-    },
-    // Sidebar entry font size 14
-    {
-        "class": "sidebar_label",
-        "settings": ["sidebar_size_14"],
         "font.size": 14,
-        "color": [200, 100, 0] // 03
+        "font.bold": true,
+        //"color": [200, 100, 0] // 03 //contrast orange
+        "color": [140, 120, 80]
+    },
+    // Sidebar entry font terminus
+    {
+        "class": "sidebar_label",
+        "settings": ["sidebar_font_terminus"],
+        "font.face": "Terminus"
+    },
+    // Sidebar entry font nobold
+    {
+        "class": "sidebar_label",
+        "settings": ["sidebar_font_nobold"],
+        "font.bold": false
     },
     // Sidebar folder entry
     {
@@ -570,7 +546,9 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row","attributes": ["hover"]}],
-        "color": [255, 211, 0] // 05
+        //"color": [255, 211, 0] // 05 //contrast yellow
+        //"color": [225, 220, 100] //bright yellow
+        "color": [255, 150, 0] //bright yellow
     },
     {
         "class": "sidebar_label",
@@ -606,7 +584,7 @@
     {
         "class": "close_button",
         "parents": [{"class": "tree_row","attributes": ["hover"]}],
-        "layer0.tint": [255, 200, 0], // 02
+        "layer0.tint": [255, 150, 0], // 02
         "layer0.opacity": 1
     },
 
@@ -616,19 +594,20 @@
         "attributes": ["dirty"],
         "layer0.texture": "industrial-coding-theme/resources/modified.png",
         "layer0.opacity": 1,
-        "layer0.tint": [255, 150, 0] // 0A
+        "layer0.tint": [140, 120, 80] // 0A
     },
     {
         "class": "close_button",
         "attributes": ["dirty"],
         "parents": [{"class": "tree_row","attributes": ["selected"]}],
-        "layer0.texture": "industrial-coding-theme/resources/modified.png"
+        "layer0.texture": "industrial-coding-theme/resources/modified.png",
+        "layer0.tint": [0, 0, 0] // 0A
     },
     // Sidebar file close hover
     {
         "class": "close_button",
         "attributes": ["hover"],
-        "layer0.tint": [55, 250, 0] // 08
+        "layer0.tint": [255, 250, 220] // 08
     },
     {
         "class": "close_button",
