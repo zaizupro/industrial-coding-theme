@@ -20,7 +20,7 @@ Then, clone the repository using this command:
 ### Manual installation
 
 * Download the [GitHub .zip](https://github.com/zaizupro/industrial-coding-theme/archive/master.zip)
-* Unzip the files and rename the folder to `industrial_coding_theme`
+* Unzip the files.
 * Find your `Packages` directory using the menu item  `Preferences -> Browse Packages...`
 * Copy the folder into your Sublime Text `Packages` directory.
 
