@@ -587,6 +587,12 @@
         "layer0.tint": [255, 150, 0], // 02
         "layer0.opacity": 1
     },
+    {
+        "class": "close_button",
+        "parents": [{"class": "tree_row","attributes": ["hover", "selected"]}],
+        "layer0.tint": [0, 0, 0], // 02
+        "layer0.opacity": 1
+    },
 
     // Sidebar file dirty
     {
