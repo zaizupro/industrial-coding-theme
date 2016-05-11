@@ -5,7 +5,7 @@
 	<key>author</key>
 	<string>ZaiZu</string>
 	<key>name</key>
-	<string>awezaz</string>
+	<string>industrial_coding</string>
 	<key>settings</key>
 	<array>
 
@@ -29,13 +29,19 @@
             <string>#7D4A0080</string>
             <!-- <key>lineHighlight</key>
             <string>#37271C</string> -->
+
           <key>selection</key>
-            <string>#5E3800</string>
+            <string>#7D4A0060</string>
+            <!-- <string>#5E3800</string> -->
             <!-- <string>#5D4F00</string> -->
             <!-- <string>#FFAE2240</string> -->
             <!-- <string>#DDF0FF33</string> -->
+            <key>selectionBorder</key>
+              <string>#ffaf00aa</string>
+
           <key>gutterForeground</key>
-            <string>#D7C775</string>
+          <string>#8C7850</string>
+            <!-- <string>#D7C775</string> -->
             <!-- <string>#DCA42C</string> -->
         </dict>
       </dict>
