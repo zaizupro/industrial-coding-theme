@@ -480,9 +480,9 @@
     // Sidebar tree
     {
         "class": "sidebar_tree",
-        "row_padding": [8,2],
+        "row_padding": [8,3],
         "indent": 16,
-        "indent_offset": 10,
+        "indent_offset": 12,
         "indent_top_level": false,
         "dark_content": true
     },
@@ -519,7 +519,7 @@
     // Sidebar entry
     {
         "class": "sidebar_label",
-        "font.size": 14,
+        "font.size": 18,
         "font.bold": true,
         //"color": [200, 100, 0] // 03 //contrast orange
         "color": [140, 120, 80]
@@ -574,7 +574,7 @@
         "layer0.opacity": 0,
         "layer0.inner_margin": 0,
         "layer0.tint": [0, 0, 0], // 02
-        "content_margin": [8,8]
+        "content_margin": [9,9]
     },
     {
         "class": "close_button",
