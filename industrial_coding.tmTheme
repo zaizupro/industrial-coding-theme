@@ -19,16 +19,16 @@
             <string>#CFCF86</string>
             <!--string>#141414</string-->
           <key>caret</key>
-            <string>#ffff14</string>
+            <string>#FF9600</string>
             <!--string>#A7A7A7</string-->
           <key>fontStyle</key>
             <string>bold</string>
+
           <key>invisibles</key>
             <string>#FFFFFF</string>
           <key>lineHighlight</key>
             <string>#7D4A0080</string>
-            <!-- <key>lineHighlight</key>
-            <string>#37271C</string> -->
+            <!-- <string>#37271C</string> -->
 
           <key>selection</key>
             <string>#7D4A0060</string>
@@ -36,13 +36,29 @@
             <!-- <string>#5D4F00</string> -->
             <!-- <string>#FFAE2240</string> -->
             <!-- <string>#DDF0FF33</string> -->
-            <key>selectionBorder</key>
-              <string>#ffaf00aa</string>
+          <key>selectionBorder</key>
+            <string>#ffaf00aa</string>
+          <key>inactiveSelection</key>
+            <string>#7D4A0060</string>
 
           <key>gutterForeground</key>
           <string>#8C7850</string>
             <!-- <string>#D7C775</string> -->
             <!-- <string>#DCA42C</string> -->
+
+          <key>findHighlight</key>
+          <string>#FF9600</string>
+
+          <key>highlight</key>
+          <string>#FF9600</string>
+
+          <key>bracketsForeground</key>
+          <string>#FF0000</string>
+
+          <key>bracketContentsForeground</key>
+          <string>#FF6000</string>
+
+
         </dict>
       </dict>
 <!-- bg default EAEAA6 -->
