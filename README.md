@@ -4,6 +4,9 @@ industrial_coding is a minimal dark Theme for Sublime Text 3. Also it is a synta
 
 ## Design & Colors
 
+![industrial_coding_top](screenshots/top.png)
+
+![industrial_coding_bottom](screenshots/bottom.png)
 
 ## Installation
 
