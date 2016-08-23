@@ -122,9 +122,9 @@
 				<string>bold</string>
 				<key>background</key>
 				<!--string>#5AB500</string-->
-				<string>#12180C</string>
+				<string>#131B01</string>
 				<key>foreground</key>
-				<string>#8EBC61</string>
+				<string>#7DAB07</string>
 			</dict>
 		</dict>
 		<dict>
@@ -195,8 +195,10 @@
 			<dict>
 				<key>fontStyle</key>
 				<string>bold</string>
+				<key>background</key>
+				<string>#1E1D00</string>
 				<key>foreground</key>
-				<string>#FAF599</string>
+				<string>#ECE21A</string>
 			</dict>
 		</dict>
 		<dict>
@@ -208,8 +210,10 @@
 			<dict>
 				<key>fontStyle</key>
 				<string></string>
+				<key>background</key>
+				<string>#271B00</string>
 				<key>foreground</key>
-				<string>#C30013</string>
+				<string>#FFF421</string>
 				<!-- <string>#9B859D</string> -->
 			</dict>
 		</dict>
@@ -359,8 +363,10 @@
 			<string>string variable</string>
 			<key>settings</key>
 			<dict>
+				<key>background</key>
+				<string>#291200</string>
 				<key>foreground</key>
-				<string>#8A9A95</string>
+				<string>#FF9600</string>
 			</dict>
 		</dict>
 		<dict>
@@ -373,7 +379,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#DAD085</string>
+				<string>#F4C152</string>
 			</dict>
 		</dict>
 		<dict>
