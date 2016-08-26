@@ -522,7 +522,7 @@
         "font.size": 18,
         "font.bold": true,
         //"color": [200, 100, 0] // 03 //contrast orange
-        "color": [140, 120, 80]
+        "color": [140, 110, 40]
     },
     // Sidebar entry font terminus
     {
@@ -541,7 +541,7 @@
         "class": "sidebar_label",
         "parents": [{"class": "tree_row","attributes": ["expandable"]}],
         // "font.bold": true,
-        "color": [255, 60, 60] // 03
+        "color": [180, 100, 0] // 03
     },
     {
         "class": "sidebar_label",
@@ -620,7 +620,7 @@
         "attributes": ["dirty", "hover"],
         "parents": [{"class": "tree_row","attributes": ["hover"]}],
         "layer0.texture": "industrial-coding-theme/resources/close.png",
-        "layer0.tint": [255, 30, 0] // 08
+        "layer0.tint": [55, 30, 250] // 08
     },
 
 //
@@ -632,14 +632,14 @@
         "class": "disclosure_button_control",
         "content_margin": [8,8],
         "layer0.texture": "industrial-coding-theme/resources/folder-closed.png",
-        "layer0.tint": [120, 120, 120], // 02
+        "layer0.tint": [180, 100, 0], // 02
         "layer0.opacity": 1,
         "layer0.inner_margin": 0
     },
     {
         "class": "disclosure_button_control",
         "parents": [{"class": "tree_row","attributes": ["hover"]}],
-        "layer0.tint": [160, 160, 160] // 04
+        "layer0.tint": [250, 150, 0] // 04
     },
     {
         "class": "disclosure_button_control",
@@ -667,13 +667,13 @@
         "class": "icon_folder",
         "content_margin": [8,8],
         "layer0.texture": "industrial-coding-theme/resources/folder-closed-folder.png",
-        "layer0.tint": [229, 181, 103, 100] // 08
+        "layer0.tint": [180, 100, 0] // 08
     },
     {
         "class": "icon_folder",
         "content_margin": [8,8],
         "parents": [{"class": "tree_row","attributes": ["hover"]}],
-        "layer0.tint": [229, 181, 103, 160] // 08
+        "layer0.tint": [250, 150, 0] // 08
     },
     {
         "class": "icon_folder",
