@@ -417,7 +417,8 @@
 //------------------------------------------------------------------------------
     {
         "class": "dialog",
-        "layer0.tint": [60, 43, 40], //dialog
+        "layer0.tint": [250, 150, 0], //dialog
+        "layer0.inner_margin": 1,
         "layer0.opacity": 1.0
     },
 
@@ -427,7 +428,7 @@
 //------------------------------------------------------------------------------
     {
         "class": "progress_bar_control",
-        "layer0.tint": [60, 43, 40], //progress bar
+        "layer0.tint": [255, 0, 0], //progress bar
         "layer0.opacity": 1.0
     },
     {
