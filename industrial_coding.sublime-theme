@@ -91,10 +91,18 @@
     //  - Tab labels
     //  ------------------------------------------------------
 
+    // use font terminus
+    {
+        "class": "tab_label",
+        "settings": ["font_terminus"],
+        "font.face": "Terminus"   // MARKER FOR REPLACING WITH UR FONT
+    },
+
     //  - Inactive tab label
     {
         "class": "tab_label",
         "font.bold": true,
+        "font.size": 14,
         "fg": [220, 180, 50], // 03
         "shadow_color": [0, 0, 0, 200],
         "shadow_offset": [0, 1]
@@ -105,7 +113,7 @@
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
         "font.bold": true,
-        "font.size": 12,
+        "font.size": 14,
         "fg": [0, 0, 0]
     },
 
@@ -156,9 +164,9 @@
 		"fg": [100, 0, 0]
     },
 
-
+//------------------------------------------------------------------------------
 // TAB BUTTONS
-//
+//------------------------------------------------------------------------------
 
     // Tab close button
     {
@@ -170,7 +178,7 @@
     {
         "class": "tab_close_button",
         "settings": ["show_tab_close_buttons"],
-        "content_margin": [9,9]
+        "content_margin": [8,8]
     },
     {
         "class": "tab_close_button",
@@ -216,9 +224,9 @@
         "layer0.opacity": 0.5
     },
 
-//
+//------------------------------------------------------------------------------
 // FOLD BUTTONS
-//
+//------------------------------------------------------------------------------
 
     {
         "class": "fold_button_control",
@@ -243,9 +251,9 @@
         "attributes": ["expanded","hover"]
     },
 
-//
+//------------------------------------------------------------------------------
 // STANDARD SCROLLBARS
-//
+//------------------------------------------------------------------------------
 
     // Standard vertical scroll bar
     {
@@ -293,9 +301,9 @@
         "blur": false
     },
 
-//
+//------------------------------------------------------------------------------
 // OVERLAY SCROLLBARS
-//
+//------------------------------------------------------------------------------
 
     // Overlay toggle scroll bar
     {
@@ -361,61 +369,118 @@
         "layer0.tint": [81, 81, 81] // 02
     },
 
-//
+//------------------------------------------------------------------------------
 // EMPTY WINDOW BACKGROUND
-//
-
+//------------------------------------------------------------------------------
     {
         "class": "sheet_container_control",
         "layer0.tint": [45, 45, 45],
         "layer0.opacity": 1
     },
 
-//
-// GRID LAYOUT
-//
 
+//------------------------------------------------------------------------------
+// GRID LAYOUT
+//------------------------------------------------------------------------------
     {
         "class": "grid_layout_control",
-        "border_size": 10, //debug, was 1
-        "border_color": [230, 30, 30] // -00
+        "border_size": 5, //debug, was 1
+        "border_color": [30, 30, 30] // -00
     },
 
-//
-// MINI MAP
-//
 
+//------------------------------------------------------------------------------
+// MINI MAP
+//------------------------------------------------------------------------------
+    {
+        "class": "minimap_control",
+        "settings": ["always_show_minimap_viewport"],
+        "viewport_color": [255, 255, 255, 15], //minimap control
+        "viewport_opacity": 1.0
+    },
+    {
+        "class": "minimap_control",
+        "settings": ["!always_show_minimap_viewport"],
+        "viewport_color": [255, 255, 255, 15], //minimap control
+        "viewport_opacity": { "target": 0.0, "speed": 10.0, "interpolation": "smoothstep" }
+    },
+    {
+        "class": "minimap_control",
+        "attributes": ["hover"],
+        "settings": ["!always_show_minimap_viewport"],
+        "viewport_opacity": 1.0
+    },
+
+
+//------------------------------------------------------------------------------
+// DIALOG
+//------------------------------------------------------------------------------
+    {
+        "class": "dialog",
+        "layer0.tint": [60, 43, 40], //dialog
+        "layer0.opacity": 1.0
+    },
+
+
+//------------------------------------------------------------------------------
+// PROGRESS BAR
+//------------------------------------------------------------------------------
+    {
+        "class": "progress_bar_control",
+        "layer0.tint": [60, 43, 40], //progress bar
+        "layer0.opacity": 1.0
+    },
     {
         "class": "minimap_control",
         "viewport_color": [255,255,255,15]
     },
 
-//
-// LABELS
-//
 
+//------------------------------------------------------------------------------
+// LABELS
+//------------------------------------------------------------------------------
     // General labels
     {
         "class": "label_control",
         "color": [255, 150, 0] // 0C
     },
-    // Text field labels
+
+    // use font terminus
     {
         "class": "label_control",
+        "settings": ["font_terminus"],
+        "font.face": "Terminus"   // MARKER FOR REPLACING WITH UR FONT
+    },
+    //-------------------
+    // Text field labels "Find What" and "Replace With"
+    {
+        "class": "label_control",
+        "font.size": 10,
+        "font.bold": true,
         "parents": [{"class": "panel_control"}]
     },
+    // use font terminus
+    {
+        "class": "label_control",
+        "settings": ["font_terminus"],
+        "parents": [{"class": "panel_control"}],
+        "font.size": 18,
+        "font.face": "Terminus"   // MARKER FOR REPLACING WITH UR FONT
+    },
+    //-------------------
     // Button labels
     {
         "class": "label_control",
         "parents": [{"class": "button_control"}],
+        "font.size": 14,
         "font.bold": true,
         "color": [255, 150, 50] // 0C
     },
 
-//
-// TOOLTIP
-//
 
+//------------------------------------------------------------------------------
+// TOOLTIP
+//------------------------------------------------------------------------------
     // Tooltip container
     {
         "class": "tool_tip_control",
@@ -430,9 +495,10 @@
         "color": [255, 150, 0]
     },
 
-//
+//------------------------------------------------------------------------------
 // STATUS BAR
-//
+//------------------------------------------------------------------------------
+
 
     // Status bar container
     {
@@ -459,17 +525,15 @@
     {
         "class": "label_control",
         "parents": [{"class": "status_bar"}],
-        "settings": ["statusbar_bold_terminus"],
-        "font.face": "Terminus",
+        "settings": ["statusbar_big_bold"],
         "font.size": 18,
         "font.bold": true
     },
 
-//
+//------------------------------------------------------------------------------
 // SIDEBAR
-//
-
-    // Sidebar container
+//------------------------------------------------------------------------------
+    //Sidebar container
     {
         "class": "sidebar_container",
         "layer0.opacity": 1,
@@ -508,8 +572,16 @@
         "class": "sidebar_heading",
         "color": [255, 150, 0], // 03
         "font.size": 14,
-        "font.face": "Terminus"
+        "font.bold": true
     },
+
+    // use font terminus
+    {
+        "class": "sidebar_heading",
+        "settings": ["font_terminus"],
+        "font.face": "Terminus"   // MARKER FOR REPLACING WITH UR FONT
+    },
+
     // Sidebar heading selected
     {
         "class": "sidebar_heading",
@@ -519,16 +591,17 @@
     // Sidebar entry
     {
         "class": "sidebar_label",
-        "font.size": 18,
+        "font.size": 14,
         "font.bold": true,
         //"color": [200, 100, 0] // 03 //contrast orange
-        "color": [140, 110, 40]
+        "color": [160, 130, 60]
     },
     // Sidebar entry font terminus
     {
         "class": "sidebar_label",
-        "settings": ["sidebar_font_terminus"],
-        "font.face": "Terminus"
+        "settings": ["font_terminus"],
+        "font.size": 18,
+        "font.face": "Terminus"   // MARKER FOR REPLACING WITH UR FONT
     },
     // Sidebar entry font nobold
     {
@@ -546,9 +619,7 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row","attributes": ["hover"]}],
-        //"color": [255, 211, 0] // 05 //contrast yellow
-        //"color": [225, 220, 100] //bright yellow
-        "color": [255, 150, 0] //bright yellow
+        "color": [255, 150, 0]
     },
     {
         "class": "sidebar_label",
@@ -563,10 +634,10 @@
         "color": [0, 0, 0] // 06
     },
 
-//
-// SIDEBAR - OPEN FILE ICONS
-//
 
+//------------------------------------------------------------------------------
+// SIDEBAR - OPEN FILE ICONS
+//------------------------------------------------------------------------------
     // Sidebar file close
     {
         "class": "close_button",
@@ -613,20 +684,27 @@
     {
         "class": "close_button",
         "attributes": ["hover"],
-        "layer0.tint": [255, 250, 220] // 08
+        // "layer0.tint": [255, 250, 220] // 08
     },
     {
         "class": "close_button",
         "attributes": ["dirty", "hover"],
         "parents": [{"class": "tree_row","attributes": ["hover"]}],
         "layer0.texture": "industrial-coding-theme/resources/close.png",
-        "layer0.tint": [55, 30, 250] // 08
+        "layer0.tint": [250, 0, 0] // 08
+    },
+    {
+        "class": "close_button",
+        "attributes": ["dirty", "hover"],
+        "parents": [{"class": "tree_row","attributes": ["hover","selected"]}],
+        "layer0.texture": "industrial-coding-theme/resources/close.png",
+        "layer0.tint": [100, 0, 0] // 08
     },
 
-//
-// SIDEBAR - GENERAL FILE ICONS
-//
 
+//------------------------------------------------------------------------------
+// SIDEBAR - GENERAL FILE ICONS
+//------------------------------------------------------------------------------
     // Sidebar group closed
     {
         "class": "disclosure_button_control",
@@ -711,11 +789,11 @@
         "layer0.opacity": 1.0
     },
 
-//
-// STANDARD TEXT BUTTONS
-//
 
-    // Default button state
+//------------------------------------------------------------------------------
+// STANDARD TEXT BUTTONS - Find, Find Prev, Find All
+//------------------------------------------------------------------------------
+    //Default button state
     {
         "class": "button_control",
         "layer0.inner_margin": 1,
@@ -723,8 +801,8 @@
         "min_size": [64,0],
         "layer0.texture": "",
         "layer0.opacity": 1,
-        "layer0.tint": [100, 70, 0], // -00
-        //"layer0.inner_margin": [8,8]
+        "layer0.tint": [150, 110, 50], // -00
+        // "layer0.inner_margin": [8,8]
         "layer0.draw_center": false
     },
     // Hover button state
@@ -732,7 +810,7 @@
         "class": "button_control",
         "attributes": ["hover"],
         "layer0.texture": "",
-        "layer0.tint": [255, 150, 0] // -01
+        "layer0.tint": [255, 200, 0] // -01
     },
     // Pressed button state
     {
@@ -741,30 +819,30 @@
         "layer0.texture": "",
         "layer0.tint": [255, 255, 110] // -00
     },
-//
+//------------------------------------------------------------------------------
 // TEXT INPUT FIELD
-//
+//------------------------------------------------------------------------------
 
     // Text input field item
     {
         "class": "text_line_control",
         "layer0.texture": "",
-        "layer0.tint": [100, 70, 0], // -01
+        "layer0.tint": [150, 110, 50], // -01
         "layer0.opacity": 1,
-        "content_margin": 1
+        "content_margin": [2,2,0,2]
     },
         // Hover button state
     {
         "class": "text_line_control",
         "attributes": ["hover"],
         "layer0.texture": "",
-        "layer0.tint": [255, 150, 0] // -01
+        "layer0.tint": [255, 220, 0] // -01
     },
 
 
-//
+//------------------------------------------------------------------------------
 // PANEL BACKGROUNDS
-//
+//------------------------------------------------------------------------------
 
     // Bottom panel background
     {
@@ -773,7 +851,7 @@
         //"layer0.inner_margin": [0,0],
         "layer0.inner_margin": [0,0,0,0],
         "layer0.opacity": 1,
-        "layer1.tint": [30, 30, 30], // -00
+        "layer1.tint": [35, 35, 35], // -00
         "layer1.opacity": 1,
         "content_margin": 1
     },
@@ -788,58 +866,56 @@
         "content_margin": 1
     },
 
-//
-// QUICK PANEL
-//
-
+//------------------------------------------------------------------------------
+// QUICK PANEL - CMD + P
+//------------------------------------------------------------------------------
     {
         "class": "quick_panel",
-        "row_padding": 8,
-        "layer0.tint": [57, 57, 57],
+        "row_padding": 1,
+        "layer0.tint": [35, 35, 35],
         "layer0.opacity": 1,
         "dark_content": true
     },
     {
         "class": "quick_panel_row",
         "layer0.texture": "",
-        "layer0.tint": [52, 57, 57], // 01
-        "layer0.inner_margin": 8,
+        "layer0.tint": [35, 35, 35], // 01
+        "layer0.inner_margin": 4,
         "layer0.opacity": 1
     },
     {
         "class": "quick_panel_row",
         "attributes": ["selected"],
         "layer0.texture": "",
-        "layer0.tint": [38, 38, 38] // -01
+        "layer0.tint": [255, 150, 0] // -01
     },
     {
         "class": "quick_panel_label",
         "fg": [255, 150, 0, 255], // 04
-        "match_fg": [255, 211, 0, 255], // 05
-        "selected_fg": [20, 20, 20, 255], // 05
-        "selected_match_fg": [0, 0, 0, 255] // 07
+        "match_fg": [255, 220, 0, 255], // 05
+        "selected_fg": [0, 0, 0], // 05
+        "selected_match_fg": [0, 0, 0] // 07
     },
     {
         "class": "quick_panel_path_label",
-        "fg": [116, 116, 116, 255], // 03
-        "match_fg": [160, 160, 160, 255], // 04
-        "selected_fg": [116, 116, 116, 255], // 03
-        "selected_match_fg": [160, 160, 160, 255] // 04
+        "fg": [180, 100, 0, 255], // 03
+        "match_fg": [255, 220, 0, 255], // 04
+        "selected_fg": [50, 50, 50, 255], // 03
+        "selected_match_fg": [0, 0, 0, 255] // 04
     },
     {
         "class": "quick_panel_score_label",
-        "fg": [116, 116, 116, 255], // 03
-        "selected_fg": [116, 116, 116, 255] // 03
+        "fg": [180, 100, 0, 255], // 03
+        "selected_fg": [0, 0, 0, 255] // 03
     },
 
-//
-// MINI QUICK PANEL
-//
-
+//------------------------------------------------------------------------------
+// MINI QUICK PANEL - CMD + SHIFT + P
+//------------------------------------------------------------------------------
     {
         "class": "mini_quick_panel_row",
         "layer0.texture": "",
-        "layer0.tint": [55, 55, 55], // 01
+        "layer0.tint": [35, 35, 35], // 01
         "layer0.opacity": 1
     },
     {
@@ -849,12 +925,10 @@
         "layer0.tint": [255, 150, 0] // -01
     },
 
-//
+
+//------------------------------------------------------------------------------
 // CODE COMPLETION DROPDOWN
-//
-    // CODE COMPLETION background
-
-
+//------------------------------------------------------------------------------
     {
         "class": "popup_control",
         "content_margin": [0,0],
@@ -866,15 +940,15 @@
         "class": "auto_complete",
         //"layer0.opacity": 1,
         "layer1.texture": "",
-        "layer1.tint": [30, 30, 30], // 01
+        "layer1.tint": [35, 35, 35], // 01
         "layer1.opacity": 1,
-        "row_padding": [4,4]
+        "row_padding": [1,1]
     },
     {
         "class": "auto_complete_label",
         "fg": [255, 150, 0, 255], // 04
-        "match_fg": [255, 211, 0, 255], // 05
-        "selected_fg": [20, 20, 20, 255], // 05
+        "match_fg": [255, 220, 0, 255], // 05
+        "selected_fg": [35, 35, 35, 255], // 05
         "selected_match_fg": [0, 0, 0, 255] // 07 fol
     },
     {
@@ -890,21 +964,33 @@
         "layer0.opacity": 1
     },
 
-//
+
+//------------------------------------------------------------------------------
 // BOTTOM PANEL BUTTONS
-//
+//------------------------------------------------------------------------------
 
     // Button group middle
     {
         "class": "icon_button_control",
-        "layer1.opacity": 0,
-        "content_margin": 7
+        "layer0.inner_margin": 1,
+        "layer0.opacity": 1,
+        "layer0.tint": [35, 35, 35], // -00
+        "layer0.draw_center": false,
+        "content_margin": 5
     },
     {
         "class": "icon_button_control",
         "attributes": ["selected"],
-        "layer0.opacity": 0
+        "layer0.tint": [255, 150, 0], // 02
     },
+    {
+        "class": "icon_button_control",
+        "attributes": ["hover"],
+        "layer0.tint": [255, 200, 0], // 02
+        "layer0.inner_margin": 2,
+    },
+
+
     // Button group left
     {
         "class": "icon_button_control",
@@ -938,159 +1024,221 @@
         "attributes": ["left","right","selected"]
     },
 
-//
+//------------------------------------------------------------------------------
 // BOTTOM PANEL ICONS - GROUP 1
-//
-
+//------------------------------------------------------------------------------
     // Regex search button
     {
         "class": "icon_regex",
         "layer0.texture": "industrial-coding-theme/resources/regex.png",
-        "layer0.tint": [200, 200, 200], // 02
+        "layer0.tint": [150, 110, 50], // 02
         "layer0.opacity": 1,
-        "content_margin": 8
-
+        "content_margin": 10
     },
+//------------------------------------------------------------------------------
+// BOTTOM PANEL ICONS - Essentials
+//------------------------------------------------------------------------------
+    //Regex search button
     {
         "class": "icon_regex",
         "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
         "layer0.tint": [255, 150, 0] // 07
+    },
+    {
+        "class": "icon_regex",
+        "parents": [{"class": "icon_button_control","attributes": ["hover"]}],
+        "layer0.tint": [255, 200, 0] // 07
+
+    },
+    {
+        "class": "icon_regex",
+        "parents": [{"class": "icon_button_control","attributes": ["pressed"]}],
+        "layer0.tint": [255, 255, 110] // 07
+
     },
     // Case sensitive search button
     {
         "class": "icon_case",
         "layer0.texture": "industrial-coding-theme/resources/casesens.png",
-        "layer0.tint": [200, 200, 200], // 02
+        "layer0.tint": [150, 110, 50], // 02
         "layer0.opacity": 1,
-        "content_margin": 8
+        "content_margin": 10
     },
     {
         "class": "icon_case",
         "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
         "layer0.tint": [255, 150, 0] // 07
     },
+    {
+        "class": "icon_case",
+        "parents": [{"class": "icon_button_control","attributes": ["hover"]}],
+        "layer0.tint": [255, 200, 0] // 07
+    },
     // Match whole word search button
     {
         "class": "icon_whole_word",
         "layer0.texture": "industrial-coding-theme/resources/wholeword.png",
-        "layer0.tint": [200, 200, 200], // 02
+        "layer0.tint": [150, 110, 50], // 02
         "layer0.opacity": 1,
-        "content_margin": 8
+        "content_margin": 10
     },
     {
         "class": "icon_whole_word",
         "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
         "layer0.tint": [255, 150, 0] // 07
     },
+    {
+        "class": "icon_whole_word",
+        "parents": [{"class": "icon_button_control","attributes": ["hover"]}],
+        "layer0.tint": [255, 200, 0] // 07
+    },
 
 //
 // BOTTOM PANEL ICONS - GROUP 1 (EXTENDED: FIND IN FILES)
-//
-
-    // Show search context button
+//------------------------------------------------------------------------------
+// BOTTOM PANEL ICONS - Search - Show search context & Use search buffer
+//------------------------------------------------------------------------------
+    //Show search context button
     {
         "class": "icon_context",
         "layer0.texture": "industrial-coding-theme/resources/context.png",
-        "layer0.tint": [200, 200, 200], // 02
+        "layer0.tint": [150, 110, 50], // 02
         "layer0.opacity": 1,
-        "content_margin": 8
+        "content_margin": 10
     },
     {
         "class": "icon_context",
         "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
         "layer0.tint": [255, 150, 0] // 07
+    },
+    {
+        "class": "icon_context",
+        "parents": [{"class": "icon_button_control","attributes": ["hover"]}],
+        "layer0.tint": [255, 200, 0] // 07
     },
     // Use search buffer
     {
         "class": "icon_use_buffer",
         "layer0.texture": "industrial-coding-theme/resources/buffer.png",
-        "layer0.tint": [200, 200, 200], // 02
+        "layer0.tint": [150, 110, 50], // 02
         "layer0.opacity": 1,
-        "content_margin": 8
+        "content_margin": 10
     },
     {
         "class": "icon_use_buffer",
         "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
         "layer0.tint": [255, 150, 0] // 07
     },
+    {
+        "class": "icon_use_buffer",
+        "parents": [{"class": "icon_button_control","attributes": ["hover"]}],
+        "layer0.tint": [255, 200, 0] // 07
+    },
 
-//
-// BOTTOM PANEL ICONS - GROUP 2
-//
-    // Reverse search direction button (ST2 only)
+
+//------------------------------------------------------------------------------
+// ST2 only
+// BOTTOM PANEL ICONS - Search - Wrap & In Selection
+//------------------------------------------------------------------------------
+    // Reverse search direction button
     {
         "class": "icon_reverse",
         "layer0.texture": "industrial-coding-theme/resources/reverse.png",
-        "layer0.tint": [200, 200, 200], // 02
+        "layer0.tint": [150, 110, 50], // 02
         "layer0.opacity": 1,
-        "content_margin": 8
+        "content_margin": 10
     },
     {
         "class": "icon_reverse",
         "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
         "layer0.tint": [255, 150, 0] // 07
+    },
+    {
+        "class": "icon_reverse",
+        "parents": [{"class": "icon_button_control","attributes": ["hover"]}],
+        "layer0.tint": [255, 200, 0] // 07
     },
     // Search wrap button
     {
         "class": "icon_wrap",
         "layer0.texture": "industrial-coding-theme/resources/wrap.png",
-        "layer0.tint": [200, 200, 200], // 02
+        "layer0.tint": [150, 110, 50], // 02
         "layer0.opacity": 1,
-        "content_margin": 8
+        "content_margin": 10
     },
     {
         "class": "icon_wrap",
         "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
         "layer0.tint": [255, 150, 0] // 07
     },
+    {
+        "class": "icon_wrap",
+        "parents": [{"class": "icon_button_control","attributes": ["hover"]}],
+        "layer0.tint": [255, 200, 0] // 07
+    },
     // Search in selection button
     {
         "class": "icon_in_selection",
         "layer0.texture": "industrial-coding-theme/resources/selection.png",
-        "layer0.tint": [220, 220, 220], // 02
+        "layer0.tint": [150, 110, 50], // 02
         "layer0.opacity": 1,
-        "content_margin": 8
+        "content_margin": 10
     },
     {
         "class": "icon_in_selection",
         "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
         "layer0.tint": [255, 150, 0] // 07
     },
+    {
+        "class": "icon_in_selection",
+        "parents": [{"class": "icon_button_control","attributes": ["hover"]}],
+        "layer0.tint": [255, 200, 0] // 07
+    },
 
-//
+//------------------------------------------------------------------------------
 // BOTTOM PANEL ICONS - GROUP 3
-//
+//------------------------------------------------------------------------------
 
     // Preserve case button
     {
         "class": "icon_preserve_case",
         "layer0.texture": "industrial-coding-theme/resources/lock.png",
-        "layer0.tint": [200, 200, 200], // 02
+        "layer0.tint": [150, 110, 50], // 02
         "layer0.opacity": 1,
-        "content_margin": 8
+        "content_margin": 10
     },
     {
         "class": "icon_preserve_case",
         "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
         "layer0.tint": [255, 150, 0] // 07
     },
+    {
+        "class": "icon_preserve_case",
+        "parents": [{"class": "icon_button_control","attributes": ["hover"]}],
+        "layer0.tint": [255, 200, 0] // 07
+    },
 
-//
+//------------------------------------------------------------------------------
 // BOTTOM PANEL ICONS - GROUP 4
-//
+//------------------------------------------------------------------------------
 
     // Highlight results button
     {
         "class": "icon_highlight",
         "layer0.texture": "industrial-coding-theme/resources/highlight.png",
-        "layer0.tint": [200, 200, 200], // 02
+        "layer0.tint": [150, 110, 50], // 02
         "layer0.opacity": 1,
-        "content_margin": 8
+        "content_margin": 10
     },
     {
         "class": "icon_highlight",
         "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
         "layer0.tint": [255, 150, 0] // 07
+    },
+    {
+        "class": "icon_highlight",
+        "parents": [{"class": "icon_button_control","attributes": ["hover"]}],
+        "layer0.tint": [255, 200, 0] // 07
     },
 
 // Symlink
