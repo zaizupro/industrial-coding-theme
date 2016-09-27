@@ -592,7 +592,7 @@
     {
         "class": "sidebar_label",
         "font.size": 14,
-        // "font.bold": true,
+        "font.bold": true,
         //"color": [200, 100, 0] // 03 //contrast orange
         "color": [160, 130, 60]
     },
