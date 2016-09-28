@@ -198,7 +198,8 @@
 				<key>background</key>
 				<string>#1E1D00</string>
 				<key>foreground</key>
-				<string>#ECE21A</string>
+				<!--string>#ECE21A</string-->
+				<string>#D3C900</string>
 			</dict>
 		</dict>
 		<dict>
