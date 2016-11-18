@@ -913,12 +913,20 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#a0a000</string>
+				<string>#B7891D</string>
 				<key>fontStyle</key>
 				<string>bold</string>
 				<key>foreground</key>
 				<string>#000000</string>
 			</dict>
+<!--			<dict>
+				<key>background</key>
+				<string>#F7A937</string>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#000000</string>
+			</dict> -->
 		</dict>
 		<dict>
 			<key>name</key>
@@ -928,9 +936,9 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#660000</string>
+				<string>#300001</string>
 				<key>foreground</key>
-				<string>#E6E1DC</string>
+				<string>#FF2000</string>
 			</dict>
 		</dict>
 		<dict>
@@ -941,9 +949,9 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#4A410D</string>
+				<string>#FF41FF</string>
 				<key>foreground</key>
-				<string>#F8F8F8</string>
+				<string>#005100</string>
 			</dict>
 		</dict>
 		<dict>
@@ -954,9 +962,9 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#144212</string>
+				<string>#103000</string>
 				<key>foreground</key>
-				<string>#E6E1DC</string>
+				<string>#AFFF00</string>
 			</dict>
 		</dict>
 		<dict>
