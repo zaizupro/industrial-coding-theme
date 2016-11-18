@@ -423,6 +423,52 @@
 				<string>#FF4411</string>
 			</dict>
 		</dict>
+		<dict>
+			<key>name</key>
+			<string>C/C++ const|extern|register|restrict|static|volatile|inline</string>
+			<key>scope</key>
+			<string>storage.modifier.c</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#FF9600</string>
+				<key>background</key>
+				<string>#472B03</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>C/C++ struct</string>
+			<key>scope</key>
+			<string>storage.type.c</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#FF9600</string>
+				<key>background</key>
+				<string>#472B03</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>C/C++ friend|explicit|virtual</string>
+			<key>scope</key>
+			<string>storage.modifier.c++</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#B03000</string>
+				<key>background</key>
+				<string>#300A00</string>
+			</dict>
+		</dict>
 
 
 		<dict>
