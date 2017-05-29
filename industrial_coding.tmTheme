@@ -425,6 +425,84 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>C/C++ pointer name</string>
+			<key>scope</key>
+			<string>pointer</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FFAA00</string>
+				<key>background</key>
+				<string>#402000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>C/C++ pointer sign</string>
+			<key>scope</key>
+			<string>keyword.operator.pointer.ccp</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FF5000</string>
+				<key>background</key>
+				<string>#402000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>C/C++ constant.language.c</string>
+			<key>scope</key>
+			<string>constant.language.c</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FF5000</string>
+				<key>background</key>
+				<string>#402000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>C/C++ breket</string>
+			<key>scope</key>
+			<string>open.round.bracket.ccpp</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FF4400</string>
+				<key>background</key>
+				<string>#402000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>C/C++ breket</string>
+			<key>scope</key>
+			<string>close.round.bracket.ccpp</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FF4400</string>
+				<key>background</key>
+				<string>#402000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>C/C++ entity.name.function.c </string>
+			<key>scope</key>
+			<string>entity.name.function.c</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ffbb44</string>
+				<key>background</key>
+				<string>#221100</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>C/C++ const|extern|register|restrict|static|volatile|inline</string>
 			<key>scope</key>
 			<string>storage.modifier.c</string>
@@ -530,9 +608,9 @@
 				<key>fontStyle</key>
 				<string>bold</string>
 				<key>background</key>
-				<string>#413F00</string>
+				<string>#303000</string>
 				<key>foreground</key>
-				<string>#FFF600</string>
+				<string>#d0d000</string>
 			</dict>
 		</dict>
 
