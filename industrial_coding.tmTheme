@@ -831,6 +831,82 @@
 			</dict>
 		</dict>
 
+<!-- =========================protobuf ext ================= -->
+
+<!-- name of type -->
+		<dict>
+			<key>name</key>
+			<string>protobuf entity.name.type.message.proto</string>
+			<key>scope</key>
+			<string>entity.name.type.message.proto</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#ffaa20</string>
+				<!-- <string>#FF0000</string> -->
+				<!-- <key>background</key> -->
+				<!-- <string>#f00</string> -->
+			</dict>
+		</dict>
+
+
+
+<!-- 'message' 'optional' -->
+		<dict>
+			<key>name</key>
+			<string>storage.modifier.proto</string>
+			<key>scope</key>
+			<string>storage.modifier.proto</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<!-- <string>#BB432C</string> -->
+				<string>#446600</string>
+				<key>background</key>
+				<string>#102000</string>
+			</dict>
+		</dict>
+
+<!-- name of object member type -->
+		<dict>
+			<key>name</key>
+			<string>storage.type.proto</string>
+			<key>scope</key>
+			<string>storage.type.proto</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<!-- <string>#BB432C</string> -->
+				<string>#bb9900</string>
+				<key>background</key>
+				<string>#201000</string>
+			</dict>
+		</dict>
+
+
+<!-- enum elements -->
+		<dict>
+			<key>name</key>
+			<string>protobuf Constant</string>
+			<key>scope</key>
+			<string>constant.language.proto</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#a92</string>
+				<key>background</key>
+				<string>#252000</string>
+			</dict>
+		</dict>
+
 <!-- =========================protobuf end ================= -->
 		<dict>
 			<key>name</key>
