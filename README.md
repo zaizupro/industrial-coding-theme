@@ -4,9 +4,9 @@ industrial_coding is a minimal dark Theme for Sublime Text 3. Also it is a synta
 
 ## Design & Colors
 
-![industrial_coding_top](screenshots/top.png)
+![industrial_coding_normal](screenshots/normal.png)
 
-![industrial_coding_bottom](screenshots/bottom.png)
+![industrial_coding_bleak](screenshots/bleak.png)
 
 ## Installation
 
@@ -35,11 +35,19 @@ Activate this theme and color scheme by modifying your user preferences file, wh
 Then add the following code settings. **(After activating the theme, you must restart Sublime Text.)**
 
 
-
+**normal colors**
 ```json
 {
     "theme": "industrial_coding.sublime-theme",
-    "color_scheme": "Packages/Theme - industrial_coding/industrial_coding.tmTheme"
+    "color_scheme": "Packages/Theme - industrial_coding/industrial_coding_normal.tmTheme"
+}
+```
+
+**bleak colors**
+```json
+{
+    "theme": "industrial_coding.sublime-theme",
+    "color_scheme": "Packages/Theme - industrial_coding/industrial_coding_bleak.tmTheme"
 }
 ```
 
