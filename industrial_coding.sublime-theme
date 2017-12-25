@@ -130,7 +130,7 @@
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
         "settings": ["highlight_modified_tabs"],
-		"fg": [240, 130, 50]
+        "fg": [240, 130, 50]
 
     },
 
@@ -161,7 +161,7 @@
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["hover", "selected", "dirty"]}],
         "settings": ["highlight_modified_tabs"],
-		"fg": [100, 0, 0]
+        "fg": [100, 0, 0]
     },
 
 //------------------------------------------------------------------------------

@@ -14,10 +14,18 @@
         <key>settings</key>
         <dict>
           <key>background</key>
-            <string>#0f0E0E</string>
+            <!-- <string>#32260E</string> -->
+            <string>#201500</string>
+
+                <!--  good-->
+            <!-- <string>#151000</string> -->
+
+            <!-- <string>#0f0E0E</string> -->
           <key>foreground</key>
-            <string>#CFCF86</string>
-            <!--string>#141414</string-->
+            <string>#c58010</string>
+            <!-- <string>#ffaf00aa</string> -->
+            <!-- <string>#EBC270</string> -->
+            <!-- <string>#CFCF86</string> -->
           <key>caret</key>
             <string>#FF9600</string>
             <!--string>#A7A7A7</string-->
@@ -53,7 +61,7 @@
           <string>#FF9600</string>
 
           <key>bracketsForeground</key>
-          <string>#FF0000</string>
+          <string>#FF00ff</string>
 
           <key>bracketContentsForeground</key>
           <string>#FF6000</string>
@@ -198,7 +206,7 @@
 				<string>#1a1a04ff</string>
 				<key>foreground</key>
 				<!--string>#ECE21A</string-->
-				<string>#918d3aff</string>
+				<string>#b09000ff</string>
 			</dict>
 		</dict>
 		<dict>
