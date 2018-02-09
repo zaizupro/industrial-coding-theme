@@ -3,6 +3,7 @@
 industrial_coding is a minimal dark Theme for Sublime Text 3. Also it is a syntax color scheme. The theme is based on the great theme [Afterglow](https://github.com/YabataDesign/afterglow-theme).
 
 ## Design & Colors
+![sublime_theme_bleak](screenshots/sublime_theme_bleak.png)
 
 ![industrial_coding_normal](screenshots/normal.png)
 
