@@ -87,8 +87,7 @@ class ictActivateCommand(sublime_plugin.WindowCommand):
     return 'Packages/industrial-coding-theme/%s.tmTheme' % THEMES[index]
 
   def _quick_list_to_theme(self, index):
-    return 'industrial_coding.sublime-theme' % THEMES[index]
-    # return '%s.sublime-theme' % THEMES[index]
+    return 'industrial_coding.sublime-theme'
 
   def run(self):
     self.display_list(THEMES)
