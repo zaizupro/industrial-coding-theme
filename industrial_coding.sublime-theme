@@ -94,6 +94,7 @@
     {
         "class": "tab_label",
         "settings": ["font_terminus"],
+        "font.size": 14,
         "font.face": "Terminus"   // MARKER FOR REPLACING WITH UR FONT
     },
 
@@ -101,9 +102,8 @@
     {
         "class": "tab_label",
         "font.bold": true,
-        "font.size": 14,
         "fg": [210, 160, 85], // 03
-        "shadow_color": [0, 0, 0, 200],
+        "shadow_color": [0, 0, 0, 240],
         "shadow_offset": [0, 1]
     },
 
@@ -112,7 +112,6 @@
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
         "font.bold": true,
-        "font.size": 14,
         "fg": [0, 0, 0],
         "shadow_color": [210, 160, 85, 250],
         "shadow_offset": [0, 1]
@@ -122,7 +121,7 @@
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["hover"]}],
-        "fg": [225, 220, 100]
+        "fg": [250, 200, 120]
     },
 
 
@@ -130,39 +129,35 @@
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-        "settings": ["highlight_modified_tabs"],
-        "fg": [210, 155, 80]
-
+        "fg": [215, 160, 70]  
     },
 
     // - Dirty active tab label
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
-        "settings": ["highlight_modified_tabs"],
-        "fg": [0, 0, 0]
+        "fg": [0, 0, 0]    
     },
 
     //  - Hover active tab label
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["selected", "hover"]}],
-        "fg": [70, 30, 10]
+        "fg": [50, 30, 10]
     },
 
     //  - Dirty Hover tab label
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["hover", "dirty"]}],
-        "fg": [255, 220, 100]
+        "fg": [255, 220, 100] 
     },
 
     // - Dirty active tab hover label
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["hover", "selected", "dirty"]}],
-        "settings": ["highlight_modified_tabs"],
-        "fg": [100, 0, 0]
+        "fg": [80, 30, 0]     
     },
 
 //------------------------------------------------------------------------------
@@ -203,12 +198,12 @@
     // Tab highlight button
     {
         "class": "tab_close_button",
-        "settings": ["highlight_modified_tabs"],
+        "settings": ["4"], 
         "parents": [{"class": "tab_control","attributes": ["dirty"]}]
     },
     {
         "class": "tab_close_button",
-        "settings": ["highlight_modified_tabs"],
+        "layer0.tint": [70, 20, 0] ,// 08    
         "parents": [{"class": "tab_control","attributes": ["dirty","selected"]}]
     },
     // Tab close button hover
@@ -260,7 +255,7 @@
     {
         "class": "scroll_bar_control",
         "layer0.texture": "",
-        "layer0.tint": [40, 35, 35], // -01
+        "layer0.tint": [50, 45, 35], // -01
         "layer0.opacity": 1,
         "layer0.inner_margin": [0,0],
         "blur": true
@@ -422,7 +417,7 @@
 //------------------------------------------------------------------------------
     {
         "class": "dialog",
-        "layer0.tint": [250, 150, 0], //dialog
+        "layer0.tint": [215, 178, 112], //dialog
         "layer0.inner_margin": 1,
         "layer0.opacity": 1.0
     },
@@ -444,7 +439,7 @@
     // General labels
     {
         "class": "label_control",
-        "color": [255, 150, 0] // 0C
+        "color": [215, 178, 112] // 0C
     },
 
     // use font terminus
@@ -474,7 +469,6 @@
     {
         "class": "label_control",
         "parents": [{"class": "button_control"}],
-        "font.size": 14,
         "font.bold": true,
         "color": [250, 190, 110] // 0C
     },
@@ -486,7 +480,7 @@
     // Tooltip container
     {
         "class": "tool_tip_control",
-        "layer0.tint": [60, 60, 60], // 02
+        "layer0.tint": [45, 40, 35], // 02
         "layer0.inner_margin": [1,1],
         "layer0.opacity": 1,
         "content_margin": [10, 8, 10, 8]
@@ -514,7 +508,7 @@
     {
         "class": "status_bar",
         "layer0.texture": "",
-        "layer0.tint": [180, 135, 70], // -00
+        "layer0.tint": [215, 178, 112], // -00
         "layer0.opacity": 1,
         "content_margin": 2
     },
@@ -528,8 +522,7 @@
         "class": "label_control",
         "parents": [{"class": "status_bar"}],
         "color": [0, 0, 0],
-        "font.size": 14,
-        "font.bold": true
+        "font.size": 14
     },
     // Status bar label bold terminus
     {
@@ -565,7 +558,7 @@
     {
         "class": "tree_row",
         // "layer0.texture": "",
-        "layer0.tint": [180, 135, 70], // 01
+        "layer0.tint": [215, 178, 112], // 01
         "layer0.opacity": 0,
         "layer0.inner_margin": [1,1],
         // make border here
@@ -580,8 +573,7 @@
     // Sidebar heading
     {
         "class": "sidebar_heading",
-        "color": [180, 135, 70], // 03
-        "font.size": 14,
+        "color": [215, 178, 112], // 03
         "font.bold": true
     },
 
@@ -589,6 +581,7 @@
     {
         "class": "sidebar_heading",
         "settings": ["font_terminus"],
+        "font.size": 14,
         "font.face": "Terminus"   // MARKER FOR REPLACING WITH UR FONT
     },
 
@@ -601,9 +594,15 @@
     // Sidebar entry
     {
         "class": "sidebar_label",
-        "font.size": 14,
-        "font.bold": true,
-        "color": [180, 140, 60]
+        "font.size": 12,
+        // "font.bold": true,
+        "color": [205, 170, 100]
+    },
+    // Sidebar entry
+    {
+        "class": "sidebar_label",
+        "settings": ["bold_sidebar_labels"],
+        "font.bold": true
     },
     // Sidebar entry font terminus
     {
@@ -623,7 +622,7 @@
         "class": "sidebar_label",
         "parents": [{"class": "tree_row","attributes": ["expandable"]}],
         // "font.bold": true,
-        "color": [180, 100, 0] // 03
+        "color": [190, 110, 0] // 03
     },
     {
         "class": "sidebar_label",
@@ -664,7 +663,7 @@
     {
         "class": "close_button",
         "parents": [{"class": "tree_row","attributes": ["hover"]}],
-        "layer0.tint": [255, 150, 0], // 02
+        "layer0.tint": [215, 178, 112], // 02
         "layer0.opacity": 1
     },
     {
@@ -810,7 +809,7 @@
         "min_size": [64,0],
         "layer0.texture": "",
         "layer0.opacity": 1,
-        "layer0.tint": [180, 135, 70], // -00
+        "layer0.tint": [215, 178, 112], // -00
         // "layer0.inner_margin": [2, 2],
         "layer0.draw_center": false
     },
@@ -819,7 +818,7 @@
         "class": "button_control",
         "attributes": ["hover"],
         "layer0.texture": "",
-        "layer0.tint": [255, 200, 0] // -01
+        "layer0.tint": [255, 150, 0] // -01
     },
     // Pressed button state
     {
@@ -836,7 +835,7 @@
     {
         "class": "text_line_control",
         "layer0.texture": "",
-        "layer0.tint": [180, 135, 70], // -01
+        "layer0.tint": [215, 178, 112], // -01
         "layer0.opacity": 1,
         "content_margin": [2,2,0,2]
     },
@@ -845,7 +844,7 @@
         "class": "text_line_control",
         "attributes": ["hover"],
         "layer0.texture": "",
-        "layer0.tint": [255, 220, 0] // -01
+        "layer0.tint": [255, 150, 0] // -01
     },
 
 
@@ -859,16 +858,16 @@
         "layer0.texture": "",
         "layer0.inner_margin": [0,0,0,0],
         "layer0.opacity": 1,
-        "layer1.tint": [45, 35, 35], // -00
+        "layer1.tint": [45, 40, 35], // -00
         "layer1.opacity": 1,
         "content_margin": 1
     },
-    // Quick panel background
+    // Quick panel border
     {
         "class": "overlay_control",
         "layer0.opacity": 1,
         "layer1.texture": "",
-        "layer1.tint": [180, 135, 70], // 01
+        "layer1.tint": [215, 178, 112], // 01
         "layer1.inner_margin": [0,0,0,0],
         "layer1.opacity": 1,
         "content_margin": 1
@@ -880,14 +879,14 @@
     {
         "class": "quick_panel",
         "row_padding": 1,
-        "layer0.tint": [45, 35, 35],
+        "layer0.tint": [45, 40, 35],
         "layer0.opacity": 1,
         "dark_content": true
     },
     {
         "class": "quick_panel_row",
         "layer0.texture": "",
-        "layer0.tint": [35, 35, 35], // 01
+        "layer0.tint": [45, 40, 35], // 01
         "layer0.inner_margin": 4,
         "layer0.opacity": 1
     },
@@ -895,25 +894,25 @@
         "class": "quick_panel_row",
         "attributes": ["selected"],
         "layer0.texture": "",
-        "layer0.tint": [255, 150, 0] // -01
+        "layer0.tint": [215, 178, 112] // -01
     },
     {
         "class": "quick_panel_label",
-        "fg": [255, 150, 0, 255], // 04
+        "fg": [230, 170, 55], // 04
         "match_fg": [255, 220, 0, 255], // 05
         "selected_fg": [0, 0, 0], // 05
         "selected_match_fg": [0, 0, 0] // 07
     },
     {
         "class": "quick_panel_path_label",
-        "fg": [180, 100, 0, 255], // 03
-        "match_fg": [255, 220, 0, 255], // 04
+        "fg": [215, 178, 112], // 03
+        "match_fg": [255, 220, 220, 255], // 04
         "selected_fg": [50, 50, 50, 255], // 03
         "selected_match_fg": [0, 0, 0, 255] // 04
     },
     {
         "class": "quick_panel_score_label",
-        "fg": [180, 100, 0, 255], // 03
+        "fg": [215, 178, 112], // 03
         "selected_fg": [0, 0, 0, 255] // 03
     },
 
@@ -923,14 +922,14 @@
     {
         "class": "mini_quick_panel_row",
         "layer0.texture": "",
-        "layer0.tint": [35, 35, 35], // 01
+        "layer0.tint": [45, 40, 35], // 01
         "layer0.opacity": 1
     },
     {
         "class": "mini_quick_panel_row",
         "attributes": ["selected"],
         "layer0.texture": "",
-        "layer0.tint": [180, 135, 70] // -01
+        "layer0.tint": [215, 178, 112] // -01
     },
 
 
@@ -940,7 +939,7 @@
     {
         "class": "popup_control",
         "content_margin": [0,0],
-        "layer0.tint": [180, 135, 70], // 01
+        "layer0.tint": [215, 178, 112], // 01
         "layer0.opacity": 1,
         "content_margin": 1
     },
@@ -948,21 +947,20 @@
         "class": "auto_complete",
         //"layer0.opacity": 1,
         "layer1.texture": "",
-        "layer1.tint": [35, 35, 35], // 01
+        "layer1.tint": [45, 40, 35], // 01
         "layer1.opacity": 1,
         "row_padding": [1,1]
     },
     {
         "class": "auto_complete_label",
-        "fg": [180, 135, 70, 255], // 04
-        "match_fg": [255, 220, 20, 255], // 05
+        "fg": [215, 178, 112], // 05
+        "match_fg": [255, 180, 50, 255], // 04
         "selected_fg": [0, 0, 0, 255], // 05
         "selected_match_fg": [0, 0, 0, 255] // 07 fol
     },
     {
         "class": "table_row",
-        //"layer0.texture": "industrial-coding-theme/resources/regex.png",
-        "layer0.tint": [255, 150, 0], // 02
+        "layer0.tint": [215, 178, 112], // 02
         "layer0.opacity": 0,
         "layer0.inner_margin": [3,2,4,2]
     },
@@ -982,19 +980,19 @@
         "class": "icon_button_control",
         "layer0.inner_margin": 1,
         "layer0.opacity": 1,
-        "layer0.tint": [35, 35, 35], // -00
+        "layer0.tint": [90, 70, 55], // -00
         "layer0.draw_center": false,
         "content_margin": 5
     },
     {
         "class": "icon_button_control",
         "attributes": ["selected"],
-        "layer0.tint": [255, 150, 0], // 02
+        "layer0.tint": [215, 178, 112], // 02
     },
     {
         "class": "icon_button_control",
         "attributes": ["hover"],
-        "layer0.tint": [255, 200, 0], // 02
+        "layer0.tint": [215, 178, 112], // 02
         "layer0.inner_margin": 2,
     },
 
@@ -1039,7 +1037,7 @@
     {
         "class": "icon_regex",
         "layer0.texture": "industrial-coding-theme/resources/regex.png",
-        "layer0.tint": [150, 110, 50], // 02
+        "layer0.tint": [90, 70, 55], // 02
         "layer0.opacity": 1,
         "content_margin": 10
     },
@@ -1050,32 +1048,32 @@
     {
         "class": "icon_regex",
         "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
-        "layer0.tint": [255, 150, 0] // 07
+        "layer0.tint": [215, 178, 112] // 07
     },
     {
         "class": "icon_regex",
         "parents": [{"class": "icon_button_control","attributes": ["hover"]}],
-        "layer0.tint": [255, 200, 0] // 07
+        "layer0.tint": [215, 178, 112] // 07
 
     },
     {
         "class": "icon_regex",
         "parents": [{"class": "icon_button_control","attributes": ["pressed"]}],
-        "layer0.tint": [255, 255, 110] // 07
+        "layer0.tint": [255, 222, 130] // 07
 
     },
     // Case sensitive search button
     {
         "class": "icon_case",
         "layer0.texture": "industrial-coding-theme/resources/casesens.png",
-        "layer0.tint": [150, 110, 50], // 02
+        "layer0.tint": [90, 70, 55], // 02
         "layer0.opacity": 1,
         "content_margin": 10
     },
     {
         "class": "icon_case",
         "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
-        "layer0.tint": [255, 150, 0] // 07
+        "layer0.tint": [215, 178, 112] // 07
     },
     {
         "class": "icon_case",
@@ -1086,14 +1084,14 @@
     {
         "class": "icon_whole_word",
         "layer0.texture": "industrial-coding-theme/resources/wholeword.png",
-        "layer0.tint": [150, 110, 50], // 02
+        "layer0.tint": [90, 70, 55], // 02
         "layer0.opacity": 1,
         "content_margin": 10
     },
     {
         "class": "icon_whole_word",
         "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
-        "layer0.tint": [255, 150, 0] // 07
+        "layer0.tint": [215, 178, 112] // 07
     },
     {
         "class": "icon_whole_word",
@@ -1110,14 +1108,14 @@
     {
         "class": "icon_context",
         "layer0.texture": "industrial-coding-theme/resources/context.png",
-        "layer0.tint": [150, 110, 50], // 02
+        "layer0.tint": [90, 70, 55], // 02
         "layer0.opacity": 1,
         "content_margin": 10
     },
     {
         "class": "icon_context",
         "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
-        "layer0.tint": [255, 150, 0] // 07
+        "layer0.tint": [215, 178, 112] // 07
     },
     {
         "class": "icon_context",
@@ -1128,14 +1126,14 @@
     {
         "class": "icon_use_buffer",
         "layer0.texture": "industrial-coding-theme/resources/buffer.png",
-        "layer0.tint": [150, 110, 50], // 02
+        "layer0.tint": [90, 70, 55], // 02
         "layer0.opacity": 1,
         "content_margin": 10
     },
     {
         "class": "icon_use_buffer",
         "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
-        "layer0.tint": [255, 150, 0] // 07
+        "layer0.tint": [215, 178, 112] // 07
     },
     {
         "class": "icon_use_buffer",
@@ -1152,14 +1150,14 @@
     {
         "class": "icon_reverse",
         "layer0.texture": "industrial-coding-theme/resources/reverse.png",
-        "layer0.tint": [150, 110, 50], // 02
+        "layer0.tint": [90, 70, 55], // 02
         "layer0.opacity": 1,
         "content_margin": 10
     },
     {
         "class": "icon_reverse",
         "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
-        "layer0.tint": [255, 150, 0] // 07
+        "layer0.tint": [215, 178, 112] // 07
     },
     {
         "class": "icon_reverse",
@@ -1170,14 +1168,14 @@
     {
         "class": "icon_wrap",
         "layer0.texture": "industrial-coding-theme/resources/wrap.png",
-        "layer0.tint": [150, 110, 50], // 02
+        "layer0.tint": [90, 70, 55], // 02
         "layer0.opacity": 1,
         "content_margin": 10
     },
     {
         "class": "icon_wrap",
         "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
-        "layer0.tint": [255, 150, 0] // 07
+        "layer0.tint": [215, 178, 112] // 07
     },
     {
         "class": "icon_wrap",
@@ -1188,14 +1186,14 @@
     {
         "class": "icon_in_selection",
         "layer0.texture": "industrial-coding-theme/resources/selection.png",
-        "layer0.tint": [150, 110, 50], // 02
+        "layer0.tint": [90, 70, 55], // 02
         "layer0.opacity": 1,
         "content_margin": 10
     },
     {
         "class": "icon_in_selection",
         "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
-        "layer0.tint": [255, 150, 0] // 07
+        "layer0.tint": [215, 178, 112] // 07
     },
     {
         "class": "icon_in_selection",
@@ -1211,14 +1209,14 @@
     {
         "class": "icon_preserve_case",
         "layer0.texture": "industrial-coding-theme/resources/lock.png",
-        "layer0.tint": [150, 110, 50], // 02
+        "layer0.tint": [90, 70, 55], // 02
         "layer0.opacity": 1,
         "content_margin": 10
     },
     {
         "class": "icon_preserve_case",
         "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
-        "layer0.tint": [255, 150, 0] // 07
+        "layer0.tint": [215, 178, 112] // 07
     },
     {
         "class": "icon_preserve_case",
@@ -1234,14 +1232,14 @@
     {
         "class": "icon_highlight",
         "layer0.texture": "industrial-coding-theme/resources/highlight.png",
-        "layer0.tint": [150, 110, 50], // 02
+        "layer0.tint": [90, 70, 55], // 02
         "layer0.opacity": 1,
         "content_margin": 10
     },
     {
         "class": "icon_highlight",
         "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
-        "layer0.tint": [255, 150, 0] // 07
+        "layer0.tint": [215, 178, 112] // 07
     },
     {
         "class": "icon_highlight",
