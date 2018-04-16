@@ -56,7 +56,7 @@ Then add the following code settings. **(After activating the theme, you must re
 
 
 **normal colors**
-```json
+```js
 {
     "theme": "industrial_coding.sublime-theme",
     "color_scheme": "Packages/industrial-coding-theme/industrial_coding_normal.tmTheme"
@@ -64,7 +64,7 @@ Then add the following code settings. **(After activating the theme, you must re
 ```
 
 **bleak colors**
-```json
+```js
 {
     "theme": "industrial_coding.sublime-theme",
     "color_scheme": "Packages/industrial-coding-theme/industrial_coding_bleak.tmTheme"
@@ -86,19 +86,22 @@ For supableak theme:
 ```js
     "mouse_wheel_switches_tabs":    true, // comment
 
-    "font_terminus":                true, // comment
+    "font_terminus":                true, // set custom font and size for elements
+					  // marked as "MARKER FOR REPLACING WITH UR FONT"
+				          // in 'industrial_coding.sublime-theme' file
+					  // default - Terminus
 
-    "highlight_modified_tabs":      true, // comment
+    "show_tab_close_buttons":       true, // show x on tabs
 
-    "show_tab_close_buttons":       true, // comment
+    "bold_folder_labels":           true, // bold font on sidebar folders labels 
 
-    "bold_folder_labels":           true, // comment
+    "bold_sidebar_labels":          true, // bold font on sidebar entry labels
 
-    "sidebar_font_nobold":          true, // comment
+    "sidebar_font_nobold":          true, // no-bold font in side bar
 
-    "statusbar_big_bold":           true, // comment
+    "statusbar_big_bold":           true, // big bold status bar font for terminus
 
-    "sidebar_no_icon":              true, // comment
+    "sidebar_no_icon":              true, // deprecated
 
-    "folder_no_icon":               true, // comment
+    "folder_no_icon":               true, // show/hide folder icon in side bar
 ```
