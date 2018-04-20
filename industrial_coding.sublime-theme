@@ -10,9 +10,9 @@
         "layer0.opacity": 1.0,
         "content_margin": [0, 0, 0, 0],
         "tab_overlap": 0,
-        "tab_width": 50,
-        "tab_min_width": 50,
-        "tab_height": 35,
+        "tab_width": 150,
+        "tab_min_width": 150,
+        "tab_height": 30,
         "mouse_wheel_switch": false
     },
     {
@@ -403,13 +403,17 @@
         "class": "minimap_control",
         "settings": ["!always_show_minimap_viewport"],
         "viewport_color": [255, 255, 255, 15], //minimap control
-        "viewport_opacity": { "target": 0.0, "speed": 10.0, "interpolation": "smoothstep" }
+        "viewport_opacity": { "target": 0.4, "speed": 10.0, "interpolation": "smoothstep" }
     },
     {
         "class": "minimap_control",
         "attributes": ["hover"],
         "settings": ["!always_show_minimap_viewport"],
         "viewport_opacity": 1.0
+    },
+    {
+        "class": "minimap_control",
+        "viewport_color": [255,200,100,100]
     },
 
 
@@ -431,10 +435,6 @@
         "class": "progress_bar_control",
         "layer0.tint": [255, 0, 0], //progress bar
         "layer0.opacity": 1.0
-    },
-    {
-        "class": "minimap_control",
-        "viewport_color": [255,255,255,15]
     },
 
 
@@ -476,7 +476,7 @@
         "parents": [{"class": "button_control"}],
         "font.size": 14,
         "font.bold": true,
-        "color": [255, 150, 50] // 0C
+        "color": [250, 190, 110] // 0C
     },
 
 
@@ -494,9 +494,17 @@
     // Tooltip content
     {
         "class": "tool_tip_label_control",
-        "color": [255, 150, 0]
+        "color": [250, 190, 110],
+        "font.bold": true
     },
 
+    // use font terminus
+    {
+        "class": "tool_tip_label_control",
+        "settings": ["font_terminus"],
+        "font.size": 14,
+        "font.face": "Terminus"   // MARKER FOR REPLACING WITH UR FONT
+    },
 //------------------------------------------------------------------------------
 // STATUS BAR
 //------------------------------------------------------------------------------
@@ -539,7 +547,7 @@
     {
         "class": "sidebar_container",
         "layer0.opacity": 1,
-        "layer0.tint": [45, 40, 38], // -01
+        "layer0.tint": [45, 40, 35], // -01
         "layer0.inner_margin": [1,5,2,1],
         "content_margin": [0,0,0,0]
     },
@@ -595,8 +603,7 @@
         "class": "sidebar_label",
         "font.size": 14,
         "font.bold": true,
-        //"color": [200, 100, 0] // 03 //contrast orange
-        "color": [160, 130, 60]
+        "color": [180, 140, 60]
     },
     // Sidebar entry font terminus
     {
