@@ -9,6 +9,16 @@ industrial_coding is a minimal dark Theme for Sublime Text 3. Also it is a synta
 
 ![industrial_coding_bleak](screenshots/bleak.png)
 
+
+
+---
+
+<h6 align='center'><code>supa</code>bleak</h6>
+
+![industrial_coding_supableak](screenshots/bleak.png)
+
+
+
 ## Installation
 
 
@@ -18,18 +28,27 @@ Locate your Sublime Text 'Packages directory' by using the menu item 'Preference
 
 Then, clone the repository using this command:
 
-    git clone https://github.com/zaizupro/industrial-coding-theme.git "Theme - industrial_coding"
+    git clone https://github.com/zaizupro/industrial-coding-theme.git
 
 
 ### Manual installation
 
 * Download the [GitHub .zip](https://github.com/zaizupro/industrial-coding-theme/archive/master.zip)
-* Unzip the files and rename the folder to 'Theme - industrial_coding'.
+* Unzip the files and rename the folder to 'industrial-coding-theme'.
 * Find your 'Packages' directory using the menu item  'Preferences -> Browse Packages...'
 * Copy the folder into your Sublime Text 'Packages' directory.
 
 
-## Activating the Theme
+---
+
+### Activation
+
+###### Recommended
+
+Open command palette via `Tools > Command Palette` (or <kbd>cmd/ctrl</kbd> + <kbd>shift</kbd> + <kbd>p</kbd>) and type `ict: Activate theme`.
+
+
+###### Via Preferences
 
 Activate this theme and color scheme by modifying your user preferences file, which you can find using the menu item 'Sublime Text -> Preferences -> Settings - User'.
 
@@ -40,7 +59,7 @@ Then add the following code settings. **(After activating the theme, you must re
 ```json
 {
     "theme": "industrial_coding.sublime-theme",
-    "color_scheme": "Packages/Theme - industrial_coding/industrial_coding_normal.tmTheme"
+    "color_scheme": "Packages/industrial-coding-theme/industrial_coding_normal.tmTheme"
 }
 ```
 
@@ -48,27 +67,38 @@ Then add the following code settings. **(After activating the theme, you must re
 ```json
 {
     "theme": "industrial_coding.sublime-theme",
-    "color_scheme": "Packages/Theme - industrial_coding/industrial_coding_bleak.tmTheme"
+    "color_scheme": "Packages/industrial-coding-theme/industrial_coding_bleak.tmTheme"
 }
 ```
 
+For supableak theme:
+
+```js
+"theme": "industrial_coding.sublime-theme",
+"color_scheme": "Packages/industrial-coding-theme/industrial_coding_supableak.tmTheme",
+```
+
+---
 
 ## Configuration
+### Settings
 
-    "mouse_wheel_switches_tabs"
-    
-    "font_terminus"
+```js
+    "mouse_wheel_switches_tabs":    true, // comment
 
-    "highlight_modified_tabs"
+    "font_terminus":                true, // comment
 
-    "show_tab_close_buttons"
+    "highlight_modified_tabs":      true, // comment
 
-    "bold_folder_labels"
+    "show_tab_close_buttons":       true, // comment
 
-    "sidebar_font_nobold"
+    "bold_folder_labels":           true, // comment
 
-    "statusbar_big_bold"
+    "sidebar_font_nobold":          true, // comment
 
-	"sidebar_no_icon"
+    "statusbar_big_bold":           true, // comment
 
-	"folder_no_icon"
+    "sidebar_no_icon":              true, // comment
+
+    "folder_no_icon":               true, // comment
+```
