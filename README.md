@@ -1,21 +1,22 @@
 # industrial_coding
 
-industrial_coding is a minimal dark Theme for Sublime Text 3. Also it is a syntax color scheme. The theme is based on the great theme [Afterglow](https://github.com/YabataDesign/afterglow-theme).
+industrial_coding is a minimal dark Theme for Sublime Text 3. Also it is a syntax color scheme.
+
+---
 
 ## Design & Colors
-![sublime_theme_bleak](screenshots/sublime_theme_bleak.png)
-
-![industrial_coding_normal](screenshots/normal.png)
-
-![industrial_coding_bleak](screenshots/bleak.png)
-
-
 
 ---
 
 <h6 align='center'><code>supa</code>bleak</h6>
 
 ![industrial_coding_supableak](screenshots/bleak.png)
+
+![sublime_theme_bleak](screenshots/sublime_theme_bleak.png)
+
+![industrial_coding_normal](screenshots/normal.png)
+
+
 
 
 
@@ -57,18 +58,14 @@ Then add the following code settings. **(After activating the theme, you must re
 
 **normal colors**
 ```js
-{
     "theme": "industrial_coding.sublime-theme",
     "color_scheme": "Packages/industrial-coding-theme/industrial_coding_normal.tmTheme"
-}
 ```
 
 **bleak colors**
 ```js
-{
     "theme": "industrial_coding.sublime-theme",
     "color_scheme": "Packages/industrial-coding-theme/industrial_coding_bleak.tmTheme"
-}
 ```
 
 For supableak theme:
