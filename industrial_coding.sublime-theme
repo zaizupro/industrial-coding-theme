@@ -30,22 +30,22 @@
         "hit_test_level": 0,
 
         //  - Inactive tab settings
-        "layer0.texture": "Theme - industrial_coding/resources/tab-inactive.png",
+        "layer0.texture": "industrial-coding-theme/resources/tab-inactive.png",
         "layer0.inner_margin": [0,0],
         "layer0.opacity": 1.0,
 
         //  - Active tab setting
-        "layer1.texture": "Theme - industrial_coding/resources/tab-active.png",
+        "layer1.texture": "industrial-coding-theme/resources/tab-active.png",
         "layer1.inner_margin": [0,0],
         "layer1.opacity": 0.0,
 
         //  - Hover tab setting
-        "layer2.texture": "Theme - industrial_coding/resources/tab-hover.png",
+        "layer2.texture": "industrial-coding-theme/resources/tab-hover.png",
         "layer2.inner_margin": [0,0],
         "layer2.opacity": 0.0,
 
         //  - Hover active tab setting
-        "layer3.texture": "Theme - industrial_coding/resources/tab-active-hover.png",
+        "layer3.texture": "industrial-coding-theme/resources/tab-active-hover.png",
         "layer3.inner_margin": [0,0],
         "layer3.opacity": 0.0
     },
@@ -80,10 +80,10 @@
         //  - Modified tab state
         "class": "tab_control",
         "attributes": ["dirty"],
-        "layer0.texture": "Theme - industrial_coding/resources/tab-inactive-dirty.png",
-        "layer1.texture": "Theme - industrial_coding/resources/tab-active-dirty.png",
-        "layer2.texture": "Theme - industrial_coding/resources/tab-hover-dirty.png",
-        "layer3.texture": "Theme - industrial_coding/resources/tab-active-hover-dirty.png"
+        "layer0.texture": "industrial-coding-theme/resources/tab-inactive-dirty.png",
+        "layer1.texture": "industrial-coding-theme/resources/tab-active-dirty.png",
+        "layer2.texture": "industrial-coding-theme/resources/tab-hover-dirty.png",
+        "layer3.texture": "industrial-coding-theme/resources/tab-active-hover-dirty.png"
     },
 
 
@@ -172,7 +172,7 @@
     // Tab close button
     {
         "class": "tab_close_button",
-        "layer0.texture": "Theme - industrial_coding/resources/close.png",
+        "layer0.texture": "industrial-coding-theme/resources/close.png",
         "layer0.opacity": 0,
         "layer0.tint": [255, 200, 0] // 03
     },
@@ -184,7 +184,7 @@
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control","attributes": ["hover"]}],
-        "layer0.texture": "Theme - industrial_coding/resources/close.png",
+        "layer0.texture": "industrial-coding-theme/resources/close.png",
         "layer0.opacity": 0
     },
     {
@@ -231,7 +231,7 @@
 
     {
         "class": "fold_button_control",
-        "layer0.texture": "Theme - industrial_coding/resources/arrow-closed.png",
+        "layer0.texture": "industrial-coding-theme/resources/arrow-closed.png",
         "layer0.tint": [210, 160, 85], // 04
         "layer0.opacity": 0.5,
         "layer0.inner_margin": 0,
@@ -245,7 +245,7 @@
     {
         "class": "fold_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Theme - industrial_coding/resources/arrow-open.png"
+        "layer0.texture": "industrial-coding-theme/resources/arrow-open.png"
     },
     {
         "class": "fold_button_control",
@@ -650,7 +650,7 @@
     // Sidebar file close
     {
         "class": "close_button",
-        "layer0.texture": "Theme - industrial_coding/resources/close.png",
+        "layer0.texture": "industrial-coding-theme/resources/close.png",
         "layer0.opacity": 0,
         "layer0.inner_margin": 0,
         "layer0.tint": [0, 0, 0], // 02
@@ -678,7 +678,7 @@
     {
         "class": "close_button",
         "attributes": ["dirty"],
-        "layer0.texture": "Theme - industrial_coding/resources/modified.png",
+        "layer0.texture": "industrial-coding-theme/resources/modified.png",
         "layer0.opacity": 1,
         "layer0.tint": [140, 120, 80] // 0A
     },
@@ -686,7 +686,7 @@
         "class": "close_button",
         "attributes": ["dirty"],
         "parents": [{"class": "tree_row","attributes": ["selected"]}],
-        "layer0.texture": "Theme - industrial_coding/resources/modified.png",
+        "layer0.texture": "industrial-coding-theme/resources/modified.png",
         "layer0.tint": [0, 0, 0] // 0A
     },
     // Sidebar file close hover
@@ -699,14 +699,14 @@
         "class": "close_button",
         "attributes": ["dirty", "hover"],
         "parents": [{"class": "tree_row","attributes": ["hover"]}],
-        "layer0.texture": "Theme - industrial_coding/resources/close.png",
+        "layer0.texture": "industrial-coding-theme/resources/close.png",
         "layer0.tint": [250, 0, 0] // 08
     },
     {
         "class": "close_button",
         "attributes": ["dirty", "hover"],
         "parents": [{"class": "tree_row","attributes": ["hover","selected"]}],
-        "layer0.texture": "Theme - industrial_coding/resources/close.png",
+        "layer0.texture": "industrial-coding-theme/resources/close.png",
         "layer0.tint": [100, 0, 0] // 08
     },
 
@@ -718,7 +718,7 @@
     {
         "class": "disclosure_button_control",
         "content_margin": [8,8],
-        "layer0.texture": "Theme - industrial_coding/resources/folder-closed.png",
+        "layer0.texture": "industrial-coding-theme/resources/folder-closed.png",
         "layer0.tint": [180, 100, 0], // 02
         "layer0.opacity": 1,
         "layer0.inner_margin": 0
@@ -736,7 +736,7 @@
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Theme - industrial_coding/resources/folder-open.png"
+        "layer0.texture": "industrial-coding-theme/resources/folder-open.png"
     },
     {
         "class": "disclosure_button_control",
@@ -747,13 +747,13 @@
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
         "parents": [{"class": "tree_row","attributes": ["selected"]}],
-        "layer0.texture": "Theme - industrial_coding/resources/folder-open.png"
+        "layer0.texture": "industrial-coding-theme/resources/folder-open.png"
     },
     // Icons sidebar
     {
         "class": "icon_folder",
         "content_margin": [8,8],
-        "layer0.texture": "Theme - industrial_coding/resources/folder-closed-folder.png",
+        "layer0.texture": "industrial-coding-theme/resources/folder-closed-folder.png",
         "layer0.tint": [180, 100, 0] // 08
     },
     {
@@ -766,7 +766,7 @@
         "class": "icon_folder",
         "content_margin": [8,8],
         "parents": [{"class": "tree_row","attributes": ["expanded"]}],
-        "layer0.texture": "Theme - industrial_coding/resources/folder-open-folder.png"
+        "layer0.texture": "industrial-coding-theme/resources/folder-open-folder.png"
     },
     {
         "class": "icon_folder",
@@ -961,7 +961,7 @@
     },
     {
         "class": "table_row",
-        //"layer0.texture": "Theme - industrial_coding/resources/regex.png",
+        //"layer0.texture": "industrial-coding-theme/resources/regex.png",
         "layer0.tint": [255, 150, 0], // 02
         "layer0.opacity": 0,
         "layer0.inner_margin": [3,2,4,2]
@@ -1038,7 +1038,7 @@
     // Regex search button
     {
         "class": "icon_regex",
-        "layer0.texture": "Theme - industrial_coding/resources/regex.png",
+        "layer0.texture": "industrial-coding-theme/resources/regex.png",
         "layer0.tint": [150, 110, 50], // 02
         "layer0.opacity": 1,
         "content_margin": 10
@@ -1067,7 +1067,7 @@
     // Case sensitive search button
     {
         "class": "icon_case",
-        "layer0.texture": "Theme - industrial_coding/resources/casesens.png",
+        "layer0.texture": "industrial-coding-theme/resources/casesens.png",
         "layer0.tint": [150, 110, 50], // 02
         "layer0.opacity": 1,
         "content_margin": 10
@@ -1085,7 +1085,7 @@
     // Match whole word search button
     {
         "class": "icon_whole_word",
-        "layer0.texture": "Theme - industrial_coding/resources/wholeword.png",
+        "layer0.texture": "industrial-coding-theme/resources/wholeword.png",
         "layer0.tint": [150, 110, 50], // 02
         "layer0.opacity": 1,
         "content_margin": 10
@@ -1109,7 +1109,7 @@
     //Show search context button
     {
         "class": "icon_context",
-        "layer0.texture": "Theme - industrial_coding/resources/context.png",
+        "layer0.texture": "industrial-coding-theme/resources/context.png",
         "layer0.tint": [150, 110, 50], // 02
         "layer0.opacity": 1,
         "content_margin": 10
@@ -1127,7 +1127,7 @@
     // Use search buffer
     {
         "class": "icon_use_buffer",
-        "layer0.texture": "Theme - industrial_coding/resources/buffer.png",
+        "layer0.texture": "industrial-coding-theme/resources/buffer.png",
         "layer0.tint": [150, 110, 50], // 02
         "layer0.opacity": 1,
         "content_margin": 10
@@ -1151,7 +1151,7 @@
     // Reverse search direction button
     {
         "class": "icon_reverse",
-        "layer0.texture": "Theme - industrial_coding/resources/reverse.png",
+        "layer0.texture": "industrial-coding-theme/resources/reverse.png",
         "layer0.tint": [150, 110, 50], // 02
         "layer0.opacity": 1,
         "content_margin": 10
@@ -1169,7 +1169,7 @@
     // Search wrap button
     {
         "class": "icon_wrap",
-        "layer0.texture": "Theme - industrial_coding/resources/wrap.png",
+        "layer0.texture": "industrial-coding-theme/resources/wrap.png",
         "layer0.tint": [150, 110, 50], // 02
         "layer0.opacity": 1,
         "content_margin": 10
@@ -1187,7 +1187,7 @@
     // Search in selection button
     {
         "class": "icon_in_selection",
-        "layer0.texture": "Theme - industrial_coding/resources/selection.png",
+        "layer0.texture": "industrial-coding-theme/resources/selection.png",
         "layer0.tint": [150, 110, 50], // 02
         "layer0.opacity": 1,
         "content_margin": 10
@@ -1210,7 +1210,7 @@
     // Preserve case button
     {
         "class": "icon_preserve_case",
-        "layer0.texture": "Theme - industrial_coding/resources/lock.png",
+        "layer0.texture": "industrial-coding-theme/resources/lock.png",
         "layer0.tint": [150, 110, 50], // 02
         "layer0.opacity": 1,
         "content_margin": 10
@@ -1233,7 +1233,7 @@
     // Highlight results button
     {
         "class": "icon_highlight",
-        "layer0.texture": "Theme - industrial_coding/resources/highlight.png",
+        "layer0.texture": "industrial-coding-theme/resources/highlight.png",
         "layer0.tint": [150, 110, 50], // 02
         "layer0.opacity": 1,
         "content_margin": 10
@@ -1252,14 +1252,14 @@
 // Symlink
     {
         "class": "icon_folder_dup",
-        "layer0.texture": "Theme - industrial_coding/resources/folder_dup.png",
+        "layer0.texture": "industrial-coding-theme/resources/folder_dup.png",
         "layer0.opacity": 0.6,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_folder_dup",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.texture": "Theme - industrial_coding/resources/folder_dup.png",
+        "layer0.texture": "industrial-coding-theme/resources/folder_dup.png",
         "layer0.opacity": 1
     }
 
