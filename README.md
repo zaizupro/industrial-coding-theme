@@ -10,7 +10,7 @@ industrial_coding is a minimal dark Theme for Sublime Text 3. Also it is a synta
 
 <h6 align='center'><code>supa</code>bleak</h6>
 
-![industrial_coding_supableak](screenshots/bleak.png)
+![industrial_coding_gif](screenshots/animated.gif)
 
 ![sublime_theme_bleak](screenshots/sublime_theme_bleak.png)
 
@@ -90,7 +90,7 @@ For supableak theme:
 
     "show_tab_close_buttons":       true, // show x on tabs
 
-    "bold_folder_labels":           true, // bold font on sidebar folders labels 
+    "bold_folder_labels":           true, // bold font on sidebar folders labels
 
     "bold_sidebar_labels":          true, // bold font on sidebar entry labels
 
