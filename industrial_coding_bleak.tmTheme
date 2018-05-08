@@ -32,8 +32,8 @@
           <key>fontStyle</key>
             <string>bold</string>
 
-          <key>invisibles</key>
-            <string>#FFFFFF</string>
+          <!-- <key>invisibles</key> -->
+            <!-- <string>#FFFFFF</string> -->
           <key>lineHighlight</key>
             <string>#7D4A0080</string>
             <!-- <string>#37271C</string> -->
