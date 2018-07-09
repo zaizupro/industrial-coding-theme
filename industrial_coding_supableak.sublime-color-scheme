@@ -1,0 +1,179 @@
+{
+    "uuid": "276c8552-029d-46ed-b619-f32c1616512e",
+    "author": "ZaiZu",
+    "name": "industrial_coding_supableak",
+
+    "variables":
+    {
+        "highlight_color": "#FF7000"
+    },
+
+    "globals":
+    {
+        "font_style":                  "bold",
+        "accent":                      "#ff0070",
+        "foreground":                  "#D7B270",
+        "background":                  "#212017",
+        "selection":                   "#7D4A0040",
+        "selection_border":            "#ffaf00aa",
+        "selection_border_width":      "1",
+        "line_highlight":              "#7D4A0060",
+        "highlight":                   "var(highlight_color)",
+        "find_highlight":              "#D7B270",
+        "caret":                       "#F7a240",
+        "inactive_selection":          "#7D4A0060",
+        "gutter_foreground":           "#8C7850",
+        "shadow":                      "#806040",
+        "shadow_width":                "10",
+        "bracket_contents_options":    "foreground bold",
+        "bracket_contents_foreground": "var(highlight_color)",
+        "brackets_options":            "foreground bold",
+        "brackets_foreground":         "#aaff00",
+        "tags_foreground":             "var(highlight_color)",
+        "tags_options":                "foreground bold"
+    },
+
+    "rules":
+    [
+        /*[ ================================== ]*/
+        /*[ Common ]*/
+        {
+            "scope": "comment",
+            "name": "Comment",
+            "foreground": "#857458",
+            "font_style": "bold",
+            "background": "#1C2111"
+        },
+        {
+            "scope": "constant",
+            "name": "Constant",
+            "foreground": "#DBBF91",
+            "font_style": "bold"
+        },
+        {
+            "scope": "entity",
+            "name": "Entity",
+            "foreground": "#D5923C",
+            "font_style": "bold"
+        },
+        {
+            "scope": "keyword",
+            "name": "Keyword",
+            "foreground": "#B89357",
+            "font_style": "bold"
+        },
+        {
+            "scope": "storage",
+            "name": "Storage",
+            "foreground": "#D5923C",
+            "font_style": "bold"
+        },
+        {
+            "scope": "string",
+            "name": "String",
+            "foreground": "#E6AA37",
+            "font_style": "bold",
+            "background": "#29281B"
+        },
+        {
+            "scope": "support",
+            "name": "Support",
+            "foreground": "#e7df45",
+            "font_style": "bold"
+        },
+        {
+            "scope": "variable",
+            "name": "Variable",
+            "foreground": "#D5923C"
+        },
+        {
+            "scope": "invalid",
+            "name": "Invalid",
+            "foreground": "#ffffff",
+            "background": "#871818"
+        },
+
+        /*[ ================================== ]*/
+        /*[ Diff ]*/
+        {
+            "scope": "meta.diff, meta.diff.header, meta.separator",
+            "name": "\u2387 diff.header",
+            "foreground": "#000000",
+            "font_style": "bold",
+            "background": "#D7B270"
+        },
+        {
+            "scope": "markup.deleted",
+            "name": "\u2387 diff.deleted",
+            "foreground": "#DB2720",
+            "background": "#2b0708"
+        },
+        {
+            "scope": "markup.changed",
+            "name": "\u2387 diff.changed",
+            "foreground": "#0c480c",
+            "background": "#eb61eb"
+        },
+        {
+            "scope": "markup.inserted",
+            "name": "\u2387 diff.inserted",
+            "foreground": "#92C723",
+            "background": "#132b07"
+        },
+
+        /*[ ================================== ]*/
+        /*[ C++ ]*/
+        {
+            "scope": "meta.preprocessor.c",
+            "name": "C/C++ Preprocessor Line",
+            "foreground": "#CC9045"
+        },
+        {
+            "scope": "keyword.operator.pointer.ccp",
+            "name": "C/C++ pointer sign",
+            "foreground": "#DB7C39",
+            "background": "#38210a"
+        },
+        {
+            "scope": "std.all.c++",
+            "name": "C/C++ std::",
+            "foreground": "#E3B054",
+            "font_style": "bold",
+            "background": "#2b2b07"
+        },
+        {
+            "scope": "entity.name.function.c",
+            "name": "C/C++ entity.name.function.c",
+            "foreground": "#D1A24F",
+            "font_style": "bold"
+        },
+
+        /*[ ================================== ]*/
+        /*[ GitGutter ]*/
+        {
+            "scope": "markup.deleted.git_gutter",
+            "name": "GitGutter deleted",
+            "foreground": "#CF0000"
+        },
+        {
+            "scope": "markup.inserted.git_gutter",
+            "name": "GitGutter inserted",
+            "foreground": "#98B85A"
+        },
+        {
+            "scope": "markup.changed.git_gutter",
+            "name": "GitGutter changed",
+            "foreground": "#a898f0"
+        },
+        {
+            "scope": "markup.ignored.git_gutter",
+            "name": "GitGutter ignored",
+            "foreground": "#595959"
+        },
+        {
+            "scope": "markup.untracked.git_gutter",
+            "name": "GitGutter untracked",
+            "foreground": "#caa959"
+        }
+    ]
+}
