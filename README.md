@@ -1,4 +1,8 @@
-# industrial_coding
+[![License](https://img.shields.io/github/license/zaizupro/industrial-coding-theme.svg?style=flat-square)](https://github.com/zaizupro/industrial-coding-theme/blob/master/LICENSE)
+
+
+# industrial-coding-theme
+
 
 industrial_coding is a minimal dark Theme for Sublime Text 3. Also it is a syntax color scheme.
 
@@ -12,67 +16,59 @@ industrial_coding is a minimal dark Theme for Sublime Text 3. Also it is a synta
 
 ![industrial_coding_gif](screenshots/animated.gif)
 
-![sublime_theme_bleak](screenshots/sublime_theme_bleak.png)
+## Installation:
 
-![industrial_coding_normal](screenshots/normal.png)
+### via Package Control
 
+1. Make sure you already have [Package Control](https://packagecontrol.io/installation) installed.
+2. Choose Install Package from the Command Palette (via `Tools > Coomand Palette` from the main menu or <kbd>cmd/ctrl</kbd> + <kbd>shift</kbd> + <kbd>p</kbd>).
+3. Select **`industrial coding theme`** and press <kbd>Enter</kbd>.
 
+### or Manual Installation
 
-
-
-## Installation
-
-
-### Git Installation
-
-Locate your Sublime Text 'Packages directory' by using the menu item 'Preferences -> Browse Packages...' .
-
-Then, clone the repository using this command:
-
-    git clone https://github.com/zaizupro/industrial-coding-theme.git
-
-
-### Manual installation
-
+* Find your 'Packages' directory using the menu item  `Preferences -> Browse Packages...`
 * Download the [GitHub .zip](https://github.com/zaizupro/industrial-coding-theme/archive/master.zip)
-* Unzip the files and rename the folder to 'industrial-coding-theme'.
-* Find your 'Packages' directory using the menu item  'Preferences -> Browse Packages...'
-* Copy the folder into your Sublime Text 'Packages' directory.
+* Unzip the files into your Sublime Text `Packages/User/` directory.
+
+or
+
+* Clone the repository
+     `git clone https://github.com/zaizupro/industrial-coding-theme.git` into your Sublime Text `Packages/User/` directory.
 
 
 ---
 
 ### Activation
 
-###### Recommended
+###### Via Command Palette (Recommended)
 
-Open command palette via `Tools > Command Palette` (or <kbd>cmd/ctrl</kbd> + <kbd>shift</kbd> + <kbd>p</kbd>) and type `ict: Activate theme`.
+Open command palette via `Tools > Command Palette` (or <kbd>cmd/ctrl</kbd> + <kbd>shift</kbd> + <kbd>p</kbd>) and type `ICT: Activate theme`.
 
 
 ###### Via Preferences
 
 Activate this theme and color scheme by modifying your user preferences file, which you can find using the menu item 'Sublime Text -> Preferences -> Settings - User'.
 
-Then add the following code settings. **(After activating the theme, you must restart Sublime Text.)**
+Then add the following code settings.
 
 
 **normal colors**
 ```js
     "theme": "industrial_coding.sublime-theme",
-    "color_scheme": "Packages/industrial-coding-theme/industrial_coding_normal.tmTheme"
+    "color_scheme": "Packages/User/industrial-coding-theme/industrial_coding_normal.tmTheme"
 ```
 
 **bleak colors**
 ```js
     "theme": "industrial_coding.sublime-theme",
-    "color_scheme": "Packages/industrial-coding-theme/industrial_coding_bleak.tmTheme"
+    "color_scheme": "Packages/User/industrial-coding-theme/industrial_coding_bleak.tmTheme"
 ```
 
 For supableak theme:
 
 ```js
 "theme": "industrial_coding.sublime-theme",
-"color_scheme": "Packages/industrial-coding-theme/industrial_coding_supableak.tmTheme",
+"color_scheme": "Packages/User/industrial-coding-theme/industrial_coding_supableak.tmTheme",
 ```
 
 ---
@@ -84,9 +80,9 @@ For supableak theme:
     "mouse_wheel_switches_tabs":    true, // comment
 
     "font_terminus":                true, // set custom font and size for elements
-					  // marked as "MARKER FOR REPLACING WITH UR FONT"
-				          // in 'industrial_coding.sublime-theme' file
-					  // default - Terminus
+                                          // marked as "MARKER FOR REPLACING WITH UR FONT"
+                                          // in 'industrial_coding.sublime-theme' file
+                                          // default - Terminus
 
     "show_tab_close_buttons":       true, // show x on tabs
 
@@ -102,3 +98,11 @@ For supableak theme:
 
     "folder_no_icon":               true, // show/hide folder icon in side bar
 ```
+
+
+## LICENSE ##
+
+Copyright (c) 2018 ZaizuPro
+
+See [`LICENSE`](./LICENSE) for details.
+
