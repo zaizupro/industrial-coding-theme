@@ -89,8 +89,8 @@
         {
             "scope": "invalid",
             "name": "Invalid",
-            "foreground": "#ffffff",
-            "background": "#871818"
+            "foreground": "#facaa0",
+            "background": "#6B1313"
         },
 
         /*[ ================================== ]*/
