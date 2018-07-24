@@ -1,5 +1,5 @@
 [![License](https://img.shields.io/github/license/zaizupro/industrial-coding-theme.svg?style=flat-square)](https://github.com/zaizupro/industrial-coding-theme/blob/master/LICENSE)
-
+[![Downloads Package Control](https://img.shields.io/packagecontrol/dt/industrial-coding-theme.svg?style=flat-square)](https://packagecontrol.io/packages/industrial-coding-theme)
 
 # industrial-coding-theme
 
