@@ -163,7 +163,7 @@
         {
             "scope": "markup.changed.git_gutter",
             "name": "GitGutter changed",
-            "foreground": "#a898f0"
+            "foreground": "#E6AA37"
         },
         {
             "scope": "markup.ignored.git_gutter",
