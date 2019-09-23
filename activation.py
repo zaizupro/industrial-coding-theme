@@ -6,7 +6,8 @@ import functools
 
 NO_SELECTION = -1
 PREFERENCES = 'Preferences.sublime-settings'
-THEMES = [ 'industrial_coding_normal', 'industrial_coding_bleak', 'industrial_coding_supableak' ]
+THEMES = [ 'industrial_coding_normal.tmTheme', 'industrial_coding_bleak.tmTheme', 'industrial_coding_supableak.sublime-color-scheme', 'industrial_coding_purp.sublime-color-scheme', 'industrial_coding_green.sublime-color-scheme' ]
+THEMESNAMES = [ 'v1', 'v2', 'v3', 'v4', 'v5' ]
 
 
 def get_color_scheme():
@@ -84,10 +85,10 @@ class IctActivateCommand(sublime_plugin.WindowCommand):
     activate_ui_theme(ui_theme)
 
   def _quick_list_to_scheme(self, index):
-    return 'Packages/industrial-coding-theme/%s.tmTheme' % THEMES[index]
+    return 'Packages/industrial-coding-theme/%s' % THEMES[index]
 
   def _quick_list_to_theme(self, index):
     return 'industrial_coding.sublime-theme'
 
   def run(self):
-    self.display_list(THEMES)
+    self.display_list(THEMESNAMES)
