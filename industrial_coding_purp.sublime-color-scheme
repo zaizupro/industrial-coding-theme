@@ -1,0 +1,163 @@
+{
+    "author": "ZaiZu",
+    "name": "industrial_coding_purp",
+    "globals":
+    {
+        "accent": "#2540DAFF",
+        "background": "#201721FF",
+        "bracket_contents_foreground": "#B825DAFF",
+        "bracket_contents_options": "foreground bold",
+        "brackets_foreground": "#DA2561FF",
+        "brackets_options": "foreground bold",
+        "caret": "#C765D2FF",
+        "find_highlight": "#AF95B2FF",
+        "font_style": "bold",
+        "foreground": "#AF95B2FF",
+        "gutter_foreground": "#6E6E6EFF",
+        "highlight": "#B825DAFF",
+        "inactive_selection": "#58255560",
+        "line_highlight": "#58255560",
+        "selection": "#58255540",
+        "selection_border": "#D025DAAA",
+        "selection_border_width": "1",
+        "shadow": "#606060FF",
+        "shadow_width": "10",
+        "tags_foreground": "#B825DAFF",
+        "tags_options": "foreground bold"
+    },
+    "rules":
+    [
+        {
+            "background": "#21111AFF",
+            "font_style": "bold",
+            "foreground": "#6E6E6EFF",
+            "name": "Comment",
+            "scope": "comment"
+        },
+        {
+            "font_style": "bold",
+            "foreground": "#B6B6B6FF",
+            "name": "Constant",
+            "scope": "constant"
+        },
+        {
+            "font_style": "bold",
+            "foreground": "#A761B0FF",
+            "name": "Entity",
+            "scope": "entity"
+        },
+        {
+            "font_style": "bold",
+            "foreground": "#8E7C93FF",
+            "name": "Keyword",
+            "scope": "keyword"
+        },
+        {
+            "font_style": "bold",
+            "foreground": "#A761B0FF",
+            "name": "Storage",
+            "scope": "storage"
+        },
+        {
+            "background": "#291B22FF",
+            "font_style": "bold",
+            "foreground": "#B65CC1FF",
+            "name": "String",
+            "scope": "string"
+        },
+        {
+            "font_style": "bold",
+            "foreground": "#BA822CFF",
+            "name": "Support",
+            "scope": "support"
+        },
+        {
+            "foreground": "#A761B0FF",
+            "name": "Variable",
+            "scope": "variable"
+        },
+        {
+            "background": "#483D62FF",
+            "foreground": "#FFFFFFFF",
+            "name": "Invalid",
+            "scope": "invalid"
+        },
+        {
+            "background": "#AF95B2FF",
+            "font_style": "bold",
+            "foreground": "#000000FF",
+            "name": "⎇ diff.header",
+            "scope": "meta.diff, meta.diff.header, meta.separator"
+        },
+        {
+            "background": "#12072BFF",
+            "foreground": "#7A45B6FF",
+            "name": "⎇ diff.deleted",
+            "scope": "markup.deleted"
+        },
+        {
+            "background": "#86AFC6FF",
+            "foreground": "#48200CFF",
+            "name": "⎇ diff.changed",
+            "scope": "markup.changed"
+        },
+        {
+            "background": "#2B0707FF",
+            "foreground": "#A24863FF",
+            "name": "⎇ diff.inserted",
+            "scope": "markup.inserted"
+        },
+        {
+            "foreground": "#9F6AA7FF",
+            "name": "C/C++ Preprocessor Line",
+            "scope": "meta.preprocessor.c"
+        },
+        {
+            "background": "#2D0A38FF",
+            "foreground": "#A35EB6FF",
+            "name": "C/C++ pointer sign",
+            "scope": "keyword.operator.pointer.ccp"
+        },
+        {
+            "background": "#2B071FFF",
+            "font_style": "bold",
+            "foreground": "#B979BEFF",
+            "name": "C/C++ std::",
+            "scope": "std.all.c++"
+        },
+        {
+            "font_style": "bold",
+            "foreground": "#A674ACFF",
+            "name": "C/C++ entity.name.function.c",
+            "scope": "entity.name.function.c"
+        },
+        {
+            "foreground": "#5725AAFF",
+            "name": "GitGutter deleted",
+            "scope": "markup.deleted.git_gutter"
+        },
+        {
+            "foreground": "#937F87FF",
+            "name": "GitGutter inserted",
+            "scope": "markup.inserted.git_gutter"
+        },
+        {
+            "foreground": "#BDCBBEFF",
+            "name": "GitGutter changed",
+            "scope": "markup.changed.git_gutter"
+        },
+        {
+            "foreground": "#595959FF",
+            "name": "GitGutter ignored",
+            "scope": "markup.ignored.git_gutter"
+        },
+        {
+            "foreground": "#9F7EA5FF",
+            "name": "GitGutter untracked",
+            "scope": "markup.untracked.git_gutter"
+        }
+    ],
+    "variables":
+    {
+    }
+}
